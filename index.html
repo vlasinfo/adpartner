@@ -115,7 +115,7 @@
                         <input type="checkbox" class="check-" value="1" name="with_block_title" checked="checked">
                     </div>
                     <div class="col-sm-11">
-                        <input type="text" class="form-control" id="headText" value="Стоит прочитать" />
+                        <input type="text" class="form-control" id="headText" value="Смотрите также" />
                     </div>
                 </div>
                 <div class="form-group row">
@@ -125,7 +125,7 @@
                     <div class="col-sm-8">
                         <select id="headSize" class="form-control">
                             <option value="12">12px</option>
-                            <option value="14">14px</option>
+                            <option value="14" selected>14px</option>
                             <option value="16">16px</option>
                             <option value="18">18px</option>
                             <option value="20">20px</option>
@@ -183,40 +183,48 @@
                     </div>
                 </div>
                 <div class="form-group row">
+                    <div class="col-sm-5">
+                        <label>Ширина банера</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="banerMaxWidth" value="800px" />
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm-5">
+                        <div class="form-group row">
+                            <div class="col-sm-4">
                                 <label>Колонки</label>
                             </div>
-                            <div class="col-sm-7">
-                                <select id="" class="form-control">
-                                    <option value="1" selected="">1</option>
+                            <div class="col-sm-8">
+                                <select id="tizerCount" class="form-control">
+                                    <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                     <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm-5 text-right">
+                        <div class="form-group row">
+                            <div class="col-sm-4">
                                 <label>Ряды</label>
                             </div>
-                            <div class="col-sm-7">
-                                <select id="" class="form-control">
-                                    <option value="1" selected="">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
+                            <div class="col-sm-8">
+                                <select id="tizerWidth" class="form-control"></select>
                             </div>
                         </div>
                     </div>
                 </div>
-
 
                 <div id="customType">
                     <div class="form-group row">
@@ -224,31 +232,7 @@
                         <div class="heading">Внешний вид</div>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Ширина банера</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="banerWidth" value="300px" />
-                        </div>
-                    </div>
 
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Минимальная ширина тизера</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="tizerMinWidth" value="300px" />
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Максимальная ширина тизера</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="tizerMaxWidth" value="300px" />
-                        </div>
-                    </div>
                     <div class="form-group row">
                         <div class="col-sm-4">
                             <label>Высота тизера</label>
@@ -279,28 +263,6 @@
                         </div>
                         <div class="col-sm-8">
                             <input type="checkbox" class="form-control" id="tizerLink"/>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Количество тизеров</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <select id="tizerCount" class="form-control">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                            </select>
                         </div>
                     </div>
 
@@ -768,10 +730,7 @@
 
                     </div>
 
-
-
-
-                <input type="hidden" id="adexchangebundle_adunit_styleSetting" name="adexchangebundle_adunit[styleSetting]" value="{&quot;image&quot;:{&quot;size&quot;:&quot;80px&quot;},&quot;title&quot;:{&quot;color&quot;:&quot;#0668a7&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;14px&quot;},&quot;text&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;link&quot;:{&quot;color&quot;:&quot;#3aa126&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;border&quot;:{&quot;color&quot;:&quot;transparent&quot;,&quot;size&quot;:&quot;0px&quot;},&quot;baner&quot;:{&quot;width&quot;:&quot;100%&quot;},&quot;tizer&quot;:{&quot;max_width&quot;:&quot;32.5%&quot;,&quot;min_width&quot;:&quot;300px&quot;,&quot;content&quot;:&quot;Стоит прочитать&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;weight&quot;:&quot;400&quot;,&quot;style&quot;:&quot;normal&quot;,&quot;size&quot;:&quot;16&quot;,&quot;height&quot;:&quot;95px&quot;,&quot;count&quot;:&quot;4&quot;,&quot;type&quot;:&quot;1&quot;,&quot;title&quot;:&quot;block&quot;,&quot;text&quot;:&quot;block&quot;,&quot;link&quot;:&quot;block&quot;}}" />
+                <input type="hidden" id="adexchangebundle_adunit_styleSetting" name="adexchangebundle_adunit[styleSetting]" value="{&quot;image&quot;:{&quot;size&quot;:&quot;80px&quot;},&quot;title&quot;:{&quot;color&quot;:&quot;#0668a7&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;14px&quot;},&quot;text&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;link&quot;:{&quot;color&quot;:&quot;#3aa126&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;border&quot;:{&quot;color&quot;:&quot;transparent&quot;,&quot;size&quot;:&quot;0px&quot;},&quot;baner&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;max_width&quot;:&quot;800px&quot;},&quot;tizer&quot;:{&quot;width&quot;:&quot;50%&quot;,&quot;max_width&quot;:&quot;100%&quot;,&quot;content&quot;:&quot;Смотрите также&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;weight&quot;:&quot;400&quot;,&quot;style&quot;:&quot;normal&quot;,&quot;size&quot;:&quot;14&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;count&quot;:&quot;4&quot;,&quot;type&quot;:&quot;1&quot;,&quot;title&quot;:&quot;block&quot;,&quot;text&quot;:&quot;block&quot;,&quot;link&quot;:&quot;block&quot;}}" />
                 <input type="hidden" id="adexchangebundle_adunit__token" name="adexchangebundle_adunit[_token]" value="6fSa_h-Esq2yEXKQQY_JdeDrjAWIi-P4Jt_HkCDAWpU" />
             </form>
             <form id="validate_form" action="http://jigsaw.w3.org/css-validator/validator" enctype="multipart/form-data" method="post" target="_blank">
@@ -794,7 +753,14 @@
 <!-- /#wrapper -->
 <!-- jQuery -->
 <script src="/bundles/adexchange/js/jquery.js"></script>
-
+    <script>
+        ///
+        $(".sliding .form-control").click(function() {
+            $('html, body').animate({
+                scrollTo: $("#etizerAds").offset().top
+            }, 2000);
+        });
+    </script>
 <!-- Bootstrap Core JavaScript -->
 <script src="/bundles/adexchange/js/bootstrap.js"></script>
 
@@ -1007,10 +973,10 @@
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-row{margin:0px;}#adpartner-jsunit-' + unit_id + ' .half{width:33%;}';
                 case '12':
                     $('#customType').show();
-                    return  '#adpartner-jsunit-' + unit_id + '{max-width:' + bannerStyle['baner']['width'] +';min-height:74px;padding:3px 4px 4px 4px;}' +
+                    return  '#adpartner-jsunit-' + unit_id + '{max-width: ' + bannerStyle['baner']['max_width'] +';margin:0 auto;min-height:74px;padding:3px 4px 4px 4px;}' +
                             '#adpartner-jsunit-' + unit_id + ' a img {border-radius: 2px;min-width:80px;min-height:80px;width:100%;height:100%;max-width: ' + bannerStyle['image']['size'] + ';max-height: ' + bannerStyle['image']['size'] +';float: left;margin: 0 10px 0 0;}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-row{margin:0px;}' +
-                            '#adpartner-jsunit-' + unit_id + ' .half{margin:0 5px 10px 0;float: left;max-width: ' + bannerStyle['tizer']['max_width'] +';min-width: ' + bannerStyle['tizer']['min_width'] +';height: ' + bannerStyle['tizer']['height'] +';overflow: hidden;}#adpartner-jsunit-' + unit_id + ' div.clr{height: 20px}' +
+                            '#adpartner-jsunit-' + unit_id + ' .half{width: ' + bannerStyle['tizer']['width'] +';margin:0 5px 10px 0;float: left;max-width: ' + bannerStyle['tizer']['max_width'] +';min-width: ' + bannerStyle['tizer']['min_width'] +';height: ' + bannerStyle['tizer']['height'] +';overflow: hidden;}#adpartner-jsunit-' + unit_id + ' div.clr{height: 20px}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-title{display: ' + bannerStyle['tizer']['title'] + ';}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-text{display: ' + bannerStyle['tizer']['text'] + ';}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-link-for-show{display: ' + bannerStyle['tizer']['link'] + ';}' +
@@ -1023,7 +989,7 @@
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-under .adpartner-title{padding:2px 5px}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-under .adpartner-text{padding:2px 5px}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-under .adpartner-link-for-show{padding:2px 5px}' +
-                            '#adpartner-jsunit-' + unit_id + ' .adpartner-row.half{margin:0px;position:relative;}' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-row.half{margin:0;padding:5px;position:relative;}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-row.half:before{content:"";background: url(' + bannerStyle['tizer']['background'] + ') no-repeat; background-size: 50%; position:absolute; top:-4px;left:-2px;width:120px;height:120px;}' +
                             '#adpartner-jsunit-' + unit_id + ' .head-text{position:relative;height:'+ bannerStyle['tizer']['size'] * 1.8 + 'px;}' +
                             '#adpartner-jsunit-' + unit_id + ' .head-text:before {content: "'+ bannerStyle['tizer']['content'] +'";font-family:"'+ bannerStyle['tizer']['font'] +'";font-size:'+ bannerStyle['tizer']['size'] +'px;font-weight:'+ bannerStyle['tizer']['weight'] +';font-style:'+ bannerStyle['tizer']['style'] +';position: absolute;width: 100%;}';            }
@@ -1044,7 +1010,6 @@
                     ';line-height: 14px;font-weight: normal;text-align:left;color: ' + bannerStyle['link']['color'] + ';font-size: ' + bannerStyle['link']['size'] + ';margin: 5px 0 0 0;}' +
                     '#adpartner-jsunit-' + unit_id + ' .adpartner-text {font-family:' + bannerStyle['text']['font'] + ';line-height: 14px;font-weight: normal;text-align:left;font-size: ' + bannerStyle['text']['size'] +
                     ';margin: 3px 0 0 0;color: ' + bannerStyle['text']['color'] +';}' +
-                    '#adpartner-jsunit-' + unit_id + ' .adpartner-margin {margin-left: 100px;}' +
                     '#adpartner-jsunit-' + unit_id + ' .half {width: 49%;margin-right: 1%;float: left;clear: none;}' +
                     '#adpartner-jsunit-' + unit_id + ' .zero {width: 1px;height: 1px;position:absolute;left:-9999px;}' +
                     '#adpartner-jsunit-' + unit_id + ' .sign{position:absolute;bottom:3px;text-align:right;right:3px;font-size:11px;padding:3px;background:#FFFFFF;}' +
@@ -1127,8 +1092,16 @@
             bannerStyle['baner']['width'] = $(this).val();
             renderBanner();
         });
+        $('#banerMaxWidth').change(function(){
+            bannerStyle['baner']['max_width'] = $(this).val();
+            renderBanner();
+        });
         $('#tizerMaxWidth').change(function(){
             bannerStyle['tizer']['max_width'] = $(this).val();
+            renderBanner();
+        });
+        $('#tizerWidth').change(function(){
+            bannerStyle['tizer']['width'] = $(this).val();
             renderBanner();
         });
         $('#tizerMinWidth').change(function(){
@@ -1220,7 +1193,9 @@
             $('#borderSize').val(bannerStyle['border']['size']);
             $('#borderColor').val(bannerStyle['border']['color']);
             $('#banerWidth').val(bannerStyle['baner']['width']);
+            $('#banerMaxWidth').val(bannerStyle['baner']['max_width']);
             $('#tizerMaxWidth').val(bannerStyle['tizer']['max_width']);
+            $('#tizerWidth').val(bannerStyle['tizer']['width']);
             $('#tizerMinWidth').val(bannerStyle['tizer']['min_width']);
             $('#tizerHeight').val(bannerStyle['tizer']['height']);
             $('#headText').val(bannerStyle['tizer']['content']);
@@ -1307,7 +1282,65 @@
     });
 
 </script>
+
+    <script>
+//tizerCount #tizerWidth
+$(document).ready(function() {
+
+    $("#tizerCount").change(function() {
+        var el = $(this) ;
+        if(el.val() === "1" ) {
+            $("#tizerWidth").html('<option value="100%">1</option>');
+        }
+        else if(el.val() === "2" ) {
+            $("#tizerWidth").html('<option value="50%">1</option><option value="100%">2</option>');
+        }
+        else if(el.val() === "3" ) {
+            $("#tizerWidth").html('<option value="100%">1</option><option value="33.33333%">3</option>');
+        }
+        else if(el.val() === "4" ) {
+            $("#tizerWidth").html('<option value="100%">1</option><option value="50%">2</option><option value="25%">4</option>');
+        }
+        else if(el.val() === "5" ) {
+            $("#tizerWidth").html('<option value="100%">1</option><option value="20%">5</option>');
+        }
+        else if(el.val() === "6" ) {
+            $("#tizerWidth").html('<option value="100%">1</option><option value="50%">2</option><option value="33.33333%">3</option><option value="16.6666667%">6</option>');
+        }
+        else if(el.val() === "7" ) {
+            $("#tizerWidth").html('<option value="100%">1</option><option value="14.2857143%">7</option>');
+        }
+        else if(el.val() === "8" ) {
+            $("#tizerWidth").html('<option value="100%">1</option><option value="50%">2</option><option value="25%">4</option><option value="12.5%">8</option>');
+        }
+        else if(el.val() === "9" ) {
+            $("#tizerWidth").html('<option value="100%">1</option><option value="33.33333%">3</option><option value="11.1111111%">9</option>');
+        }
+        else if(el.val() === "10" ) {
+            $("#tizerWidth").html('<option value="100%">1</option><option value="50%">2</option><option value="20%">5</option><option value="10%">10</option>');
+        }
+        else if(el.val() === "11" ) {
+            $("#tizerWidth").html('<option value="100%">1</option><option value="9.09090909%">11</option>');
+        }
+        else if(el.val() === "12" ) {
+            $("#tizerWidth").html('<option value="100%">1</option><option value="50%">2</option><option value="33.33333%">3</option><option value="25%">4</option><option value="16.6666667%">6</option><option value="8.33333333%">12</option>');
+        }
+    });
+
+});
+    </script>
 </div>
 </body>
-
+<!--<option value="100%">1</option>-->
+<!--<option value="50%">2</option>-->
+<!--<option value="33.33333%">3</option>-->
+<!--<option value="25%">4</option>-->
+<!--<option value="20%">5</option>-->
+<!--<option value="16.6666667%">6</option>-->
+<!--<option value="14.2857143%">7</option>-->
+<!--<option value="12.5%">8</option>-->
+<!--<option value="11.1111111%">9</option>-->
+<!--<option value="10%">10</option>-->
+<!--<option value="9.09090909%">11</option>-->
+<!--<option value="8.33333333%">12</option>-->
 </html>
