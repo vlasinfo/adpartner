@@ -17,32 +17,32 @@ FTP: ftp://vh24.timeweb.ru
 
     <title>adPartner</title>
     <!-- Bootstrap Core CSS -->
-    <link href="/bundles/adexchange/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bundles/adexchange/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="/bundles/adexchange/css/metisMenu.css" rel="stylesheet">
+    <link href="bundles/adexchange/css/metisMenu.css" rel="stylesheet">
 
     <!-- Timeline CSS -->
-    <link href="/bundles/adexchange/css/timeline.css" rel="stylesheet">
+    <link href="bundles/adexchange/css/timeline.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/bundles/adexchange/css/sb-admin-2.css" rel="stylesheet">
+    <link href="bundles/adexchange/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="/bundles/adexchange/css/morris.css" rel="stylesheet">
+    <link href="bundles/adexchange/css/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/bundles/adexchange/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="/bundles/adexchange/css/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
-    <link href="/bundles/adexchange/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
-    <link href="/bundles/adexchange/css/bootstrap-clockpicker.min.css" rel="stylesheet" type="text/css">
-    <link href="/bundles/adexchange/css/bootstrap-combobox.css" rel="stylesheet" type="text/css">
-    <link href="/bundles/adexchange/css/dataTable.bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bundles/adexchange/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="bundles/adexchange/css/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
+    <link href="bundles/adexchange/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+    <link href="bundles/adexchange/css/bootstrap-clockpicker.min.css" rel="stylesheet" type="text/css">
+    <link href="bundles/adexchange/css/bootstrap-combobox.css" rel="stylesheet" type="text/css">
+    <link href="bundles/adexchange/css/dataTable.bootstrap.css" rel="stylesheet" type="text/css">
 
     <!-- jsTree -->
-    <link rel="stylesheet" href="/bundles/adexchange/css/style.min.css"/>
+    <link rel="stylesheet" href="bundles/adexchange/css/style.min.css"/>
 
-    <link rel="stylesheet" href="/bundles/adexchange/css/jquery.Jcrop.min.css" />
+    <link rel="stylesheet" href="bundles/adexchange/css/jquery.Jcrop.min.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,7 +51,7 @@ FTP: ftp://vh24.timeweb.ru
     <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
     <![endif]-->
 
-    <link href="/bundles/adexchange/css/custom.css" rel="stylesheet">
+    <link href="bundles/adexchange/css/custom.css" rel="stylesheet">
 
 </head>
 
@@ -112,12 +112,88 @@ FTP: ftp://vh24.timeweb.ru
             <div id="nav_sliding" class="sidebar sliding affix">
                 <div class="form-group row">
                     <div class="col-sm-12">
+                        <div class="heading">Основная информация</div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="adexchangebundle_adunit_title" class="required">Название</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" id="adexchangebundle_adunit_title" name="adexchangebundle_adunit[title]" required="required" maxlength="255" class="form-control" value="top_v1_728x90" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="adexchangebundle_adunit_unit_type" class="required">Тип</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <select id="adexchangebundle_adunit_unit_type" name="adexchangebundle_adunit[unit_type]" class="form-control"><option value="tizer" selected="selected">Тизер</option><option value="media">Медиа</option><option value="video">Видео</option></select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="adexchangebundle_adunit_status" class="required">Статус</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <select id="adexchangebundle_adunit_status" name="adexchangebundle_adunit[status]" class="form-control active-or-not" autocomplete="off"><option value="active" selected="selected">Active</option><option value="not_active">Not Active</option></select>
+                    </div>
+                </div>
+
+                <div class="form-group row" style="display: none">
+                    <div class="col-sm-4">
+                        <label for="adexchangebundle_adunit_unitSize" class="required">Размер</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <select id="adexchangebundle_adunit_unitSize" name="adexchangebundle_adunit[unitSize]" class="form-control" autocomplete="off"><option value="12" selected="selected">custom</option></select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <div class="heading">Допустимые типы объявлений</div>
+                    </div>
+                </div>
+                <div class="multiselect-list">
+                    <div id="adexchangebundle_adunit_adType">
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="adexchangebundle_adunit_adType_1">Реклама</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox" id="adexchangebundle_adunit_adType_1" name="adexchangebundle_adunit[adType][]" value="1" checked="checked" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="adexchangebundle_adunit_adType_2">Агрессивная реклама</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox" id="adexchangebundle_adunit_adType_2" name="adexchangebundle_adunit[adType][]" value="2" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="adexchangebundle_adunit_adType_3">Новости</label>
+                             </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox" id="adexchangebundle_adunit_adType_3" name="adexchangebundle_adunit[adType][]" value="3" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <div class="col-sm-12">
                         <div class="heading">Главный заголовок</div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-1 pr-0">
-                        <input type="checkbox" class="check-" value="1" name="with_block_title" checked="checked">
+                        <input type="checkbox" class="form-control" id="headShow"/>
                     </div>
                     <div class="col-sm-11">
                         <input type="text" class="form-control" id="headText" value="Смотрите также" />
@@ -154,7 +230,7 @@ FTP: ftp://vh24.timeweb.ru
 
                 <div class="form-group row">
                     <div class="col-sm-4">
-                        <label>Насыщенность шрифта</label>
+                        <label>Толщина</label>
                     </div>
                     <div class="col-sm-8">
                         <select id="headWeight" class="form-control">
@@ -183,6 +259,26 @@ FTP: ftp://vh24.timeweb.ru
                     </div>
                 </div>
                 <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label>Выровнять</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <select id="headPos" class="form-control">
+                            <option value="left" selected>Слева</option>
+                            <option value="center">По центру</option>
+                            <option value="right">Справа</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label>Показать лого</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input id="tizerSign" class="text-left" type="checkbox"/>
+                    </div>
+                </div>
+                <div class="form-group row">
                     <div class="col-sm-12">
                         <div class="heading">Количество тизеров</div>
                     </div>
@@ -192,7 +288,7 @@ FTP: ftp://vh24.timeweb.ru
                         <label>Ширина банера</label>
                     </div>
                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="banerMaxWidth" value="800px" />
+                        <input type="text" class="form-control" id="banerMaxWidth" value="100%" />
                     </div>
                 </div>
                 <div class="row">
@@ -493,49 +589,6 @@ FTP: ftp://vh24.timeweb.ru
 
             <form name="adexchangebundle_adunit" method="post" action="/adunit/1/update"><input type="hidden" name="_method" value="PUT" />
 
-
-                    <div class="panel panel-default">
-
-                        <div class="panel-heading">
-                            Информация о баннере
-                        </div>
-
-                        <div class="panel-body">
-                        <div class="col-lg-6">
-                            <div class="form-group ">
-                                <label for="adexchangebundle_adunit_sitePartner" class="required">Сайт</label>
-                                <select id="adexchangebundle_adunit_sitePartner" name="adexchangebundle_adunit[sitePartner]" class="form-control" autocomplete="off"><option value="1" selected="selected">ubr.ua</option><option value="2">gazeta.ua</option><option value="3">vesti.ua</option><option value="4">24tv.ua</option><option value="5">maiersplate.com</option><option value="6">hyser.com.ua</option><option value="7">football24.ua</option><option value="8">http://zaxid.net/</option><option value="9">http://radio24.ua/</option><option value="10">inforesist.org</option><option value="11">xsport.ua</option><option value="12">u-news.com.ua</option><option value="13">onpress.info</option><option value="14">infokava.com</option><option value="15">ipress.net.ua</option><option value="16">http://www.autocentre.ua/</option><option value="17">http://avtobazar.ua/</option><option value="18">eizvestia.com</option><option value="19">statuspress.com.ua</option><option value="20">expert.ua</option><option value="21">goloskarpat.info</option><option value="22">vsviti.com.ua</option><option value="23">terrawoman.ua</option><option value="24">http://drive-news.net/</option><option value="25">kolona.net</option><option value="26">mmr.net.ua</option><option value="27">62.ua</option><option value="28">642.ua</option><option value="29">buhgalter.com.ua</option><option value="30">gorod.dp.ua</option><option value="31">vnews.agency</option><option value="32">spert-xl.org</option><option value="33">gogetnews.info</option><option value="34">20khvylyn.com</option><option value="35">057.ua</option><option value="36">pmg.ua</option><option value="37">ukrinform.ua</option><option value="38">http://fraza.ua</option><option value="39">pravda.com.ua</option><option value="40">galka.if.ua</option><option value="41">test.com</option><option value="42">gorodkiev.com.ua</option><option value="43">delo.ua</option><option value="44">rian.com.ua</option><option value="45">irr.ua</option><option value="46">sowa.ua</option><option value="47">healthinfo.ua</option><option value="48">vlebedev.com</option><option value="49">rbc.ua</option><option value="50">bagnet.org</option><option value="51">infocars.org</option><option value="52">autosvit.com.ua</option><option value="53">112.ua</option><option value="54">nv.ua</option><option value="55">online.ua</option><option value="56">zerkalo.io</option><option value="57">glavpost.com</option><option value="58">lukoshko.net</option><option value="59">dtp.kiev.ua</option><option value="60">gazeta.lviv.ua</option><option value="61">stroqato.com</option><option value="62">provce.ck.ua</option><option value="63">newsyou.info</option><option value="64">volynpost.com</option><option value="65">privatka.ua</option><option value="66">portal.lviv.ua</option><option value="67">e-news.com.ua</option><option value="68">espreso.tv</option><option value="69">test</option><option value="70">tenews.te.ua</option><option value="71">charivne.info</option><option value="72">ukrinform_2.ua</option><option value="73">orakul.com</option><option value="74">strana.ua</option><option value="75">chernov.com</option><option value="76">tyosoblyva.in.ua</option><option value="77">ukr.net</option><option value="78">lovecook.me</option><option value="79">shablon</option><option value="80">football24</option><option value="81">radio24</option><option value="82">ua-cinema.com</option><option value="83">uafilm.net</option><option value="84">othervision.info</option><option value="85">beztabu.net</option></select>
-                            </div>
-                            <div class="form-group ">
-                                <label for="adexchangebundle_adunit_title" class="required">Название</label>
-                                <input type="text" id="adexchangebundle_adunit_title" name="adexchangebundle_adunit[title]" required="required" maxlength="255" class="form-control" value="top_v1_728x90" />
-                            </div>
-                            <div class="form-group ">
-                                <label for="adexchangebundle_adunit_unit_type" class="required">Тип</label>
-                                <select id="adexchangebundle_adunit_unit_type" name="adexchangebundle_adunit[unit_type]" class="form-control"><option value="tizer" selected="selected">Тизер</option><option value="media">Медиа</option><option value="video">Видео</option></select>
-                            </div>
-                            <div class="form-group ">
-                                <label for="adexchangebundle_adunit_status" class="required">Статус</label>
-                                <select id="adexchangebundle_adunit_status" name="adexchangebundle_adunit[status]" class="form-control active-or-not" autocomplete="off"><option value="active" selected="selected">Active</option><option value="not_active">Not Active</option></select>
-                            </div>
-                            <div class="form-group ">
-                                <label for="adexchangebundle_adunit_unitSize" class="required">Размер</label>
-                                <select id="adexchangebundle_adunit_unitSize" name="adexchangebundle_adunit[unitSize]" class="form-control" autocomplete="off"><option value="1">300x250</option><option value="2">728x90</option><option value="3">300x500</option><option value="4">600x500</option><option value="5">media banner</option><option value="6">240x400</option><option value="7">300x600</option><option value="8">728x500</option><option value="9">600x250</option><option value="10">833x250</option><option value="11">970x90</option><option value="12" selected="selected">custom</option><option value="13">video banner</option></select>
-                            </div>
-                            </div>
-                            <div class="col-lg-6">
-                            <div class="form-group  multiselect-list">
-                                <label class="required">Допустимые типы объявлений</label>
-                                <div id="adexchangebundle_adunit_adType" class="form-control"><input type="checkbox" id="adexchangebundle_adunit_adType_1" name="adexchangebundle_adunit[adType][]" value="1" checked="checked" />                <label for="adexchangebundle_adunit_adType_1">Реклама</label><input type="checkbox" id="adexchangebundle_adunit_adType_2" name="adexchangebundle_adunit[adType][]" value="2" />                <label for="adexchangebundle_adunit_adType_2">Агрессивная реклама</label><input type="checkbox" id="adexchangebundle_adunit_adType_3" name="adexchangebundle_adunit[adType][]" value="3" />                <label for="adexchangebundle_adunit_adType_3">Новости</label></div>
-                            </div>
-                            <div class="form-group ">
-                                <label for="adexchangebundle_adunit_comment">Комментарий</label>
-                                <textarea id="adexchangebundle_adunit_comment" name="adexchangebundle_adunit[comment]" class="form-control" style="height:90px"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div id="tizerAds">
 
                     <div class="panel panel-default">
@@ -555,113 +608,25 @@ FTP: ftp://vh24.timeweb.ru
                                     </div>
 
                                     <div class="col-sm-2">
-                                        Шрифт
-                                        <select id="previewFamily" class="form-control">
-                                            <option value="Arial">Arial</option>
-                                            <option value="Verdana ">Verdana </option>
-                                            <option value="Times">Times</option>
-                                            <option value="Impact ">Impact </option>
-                                            <option value="Comic Sans MS">Comic Sans</option>
+                                        Устройство
+                                        <select id="previewDevice" class="form-control">
+                                            <option value="100%">На весь экран</option>
+                                            <option value="320px">iPhone 4</option>
+                                            <option value="375px">iPhone 6</option>
+                                            <option value="414px">iPhone 6 Plus</option>
+                                            <option value="768px">iPad</option>
+                                            <option value="360px">Galaxy S5</option>
+                                            <option value="412px">Nexus</option>
+                                            <option value="360px">Nokia N9</option>
+                                            <option value="360px">BlackBerry Z30</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-2">
-                                        Размер текста
-                                        <select id="previewSize" class="form-control">
-                                            <option value="8px">8px</option>
-                                            <option value="9px">9px</option>
-                                            <option value="10px">10px</option>
-                                            <option value="11px">11px</option>
-                                            <option value="12px">12px</option>
-                                            <option value="13px">13px</option>
-                                            <option value="14px">14px</option>
-                                            <option value="15px">15px</option>
-                                            <option value="16px">16px</option>
-                                            <option value="17px">17px</option>
-                                            <option value="18px">18px</option>
-                                        </select>
-                                        Толщина
-                                        <select id="previewWeight" class="form-control">
-                                            <option value="100">thin (100)</option>
-                                            <option value="200">200</option>
-                                            <option value="300">300</option>
-                                            <option value="400" selected="">400</option>
-                                            <option value="500">500</option>
-                                            <option value="600">600</option>
-                                            <option value="700">700</option>
-                                            <option value="800">800</option>
-                                            <option value="900">900</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        Размер заголовка
-                                        <select id="previewTitleSize" class="form-control">
-                                            <option value="8px">8px</option>
-                                            <option value="9px">9px</option>
-                                            <option value="10px">10px</option>
-                                            <option value="11px">11px</option>
-                                            <option value="12px">12px</option>
-                                            <option value="13px">13px</option>
-                                            <option value="14px">14px</option>
-                                            <option value="15px">15px</option>
-                                            <option value="16px">16px</option>
-                                            <option value="17px">17px</option>
-                                            <option value="18px">18px</option>
-                                            <option value="20px">20px</option>
-                                            <option value="22px">22px</option>
-                                            <option value="24px">24px</option>
-                                            <option value="26px">26px</option>
-                                            <option value="28px">28px</option>
-                                            <option value="30px">30px</option>
-                                            <option value="32px" selected>32px</option>
-                                            <option value="34px">34px</option>
-                                        </select>
-                                        Толщина
-                                        <select id="titleWeight" class="form-control">
-                                            <option value="100">thin (100)</option>
-                                            <option value="200">200</option>
-                                            <option value="300">300</option>
-                                            <option value="400" selected="">400</option>
-                                            <option value="500">500</option>
-                                            <option value="600">600</option>
-                                            <option value="700">700</option>
-                                            <option value="800">800</option>
-                                            <option value="900">900</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        Размер подзаголовка
-                                        <select id="previewStitleSize" class="form-control">
-                                            <option value="8px">8px</option>
-                                            <option value="9px">9px</option>
-                                            <option value="10px">10px</option>
-                                            <option value="11px">11px</option>
-                                            <option value="12px">12px</option>
-                                            <option value="13px">13px</option>
-                                            <option value="14px">14px</option>
-                                            <option value="15px">15px</option>
-                                            <option value="16px">16px</option>
-                                            <option value="17px">17px</option>
-                                            <option value="18px">18px</option>
-                                            <option value="20px">20px</option>
-                                            <option value="22px" selected>22px</option>
-                                            <option value="24px">24px</option>
-                                            <option value="26px">26px</option>
-                                            <option value="28px">28px</option>
-                                            <option value="30px">30px</option>
-                                            <option value="32px">32px</option>
-                                            <option value="34px">34px</option>
-                                        </select>
-                                        Толщина
-                                        <select id="titleSweight" class="form-control">
-                                            <option value="100">thin (100)</option>
-                                            <option value="200">200</option>
-                                            <option value="300">300</option>
-                                            <option value="400" selected="">400</option>
-                                            <option value="500">500</option>
-                                            <option value="600">600</option>
-                                            <option value="700">700</option>
-                                            <option value="800">800</option>
-                                            <option value="900">900</option>
+                                        Картинка
+                                        <select id="previewImg" class="form-control">
+                                            <option value="none">Над текстом</option>
+                                            <option value="left">Слева</option>
+                                            <option value="right">Справа</option>
                                         </select>
                                     </div>
 
@@ -674,15 +639,16 @@ FTP: ftp://vh24.timeweb.ru
                                     <div class="col-lg-12">
                                     <div class="preview-title">The AdPartner Times</div>
                                     <div class="preview-s-title">Ученые NASA создадут «обнаженную» карту Большого Барьерного рифа</div>
-                                    <div class="preview-img" style="background-image: url('main-preview.jpg');">
+                                    <div class="preview-text">
+                                        <div class="preview-img" style="background-image: url('main-preview.jpg');"></div>
+                                        <p>
+                                            Используя современный датчик, который позволяет ученым эффективно строить «обнаженную» карту рифа
+                                            с атмосферой и удаленной водой, NASA реализует масштабный проект. Последний является частью
+                                            самого большого обзора когда-либо проводимого в мире коралловых рифов. Изображения, взятые выше
+                                            шести секций рифа, будут проанализированы в Лаборатории реактивного движения NASA в Калифорнии,
+                                            что сможет дать картину того, какая территория покрыта кораллами, морскими водорослями и песком.
+                                        </p>
                                     </div>
-                                    <p>
-                                        Используя современный датчик, который позволяет ученым эффективно строить «обнаженную» карту рифа
-                                        с атмосферой и удаленной водой, NASA реализует масштабный проект. Последний является частью
-                                        самого большого обзора когда-либо проводимого в мире коралловых рифов. Изображения, взятые выше
-                                        шести секций рифа, будут проанализированы в Лаборатории реактивного движения NASA в Калифорнии,
-                                        что сможет дать картину того, какая территория покрыта кораллами, морскими водорослями и песком.
-                                    </p>
                                 </div>
                                 </div>
 <style>
@@ -735,7 +701,7 @@ FTP: ftp://vh24.timeweb.ru
 
                     </div>
 
-                <input type="hidden" id="adexchangebundle_adunit_styleSetting" name="adexchangebundle_adunit[styleSetting]" value="{&quot;image&quot;:{&quot;size&quot;:&quot;80px&quot;},&quot;title&quot;:{&quot;color&quot;:&quot;#0668a7&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;14px&quot;},&quot;text&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;link&quot;:{&quot;color&quot;:&quot;#3aa126&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;border&quot;:{&quot;color&quot;:&quot;transparent&quot;,&quot;size&quot;:&quot;0px&quot;},&quot;baner&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;max_width&quot;:&quot;800px&quot;},&quot;tizer&quot;:{&quot;width&quot;:&quot;50%&quot;,&quot;max_width&quot;:&quot;100%&quot;,&quot;content&quot;:&quot;Смотрите также&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;weight&quot;:&quot;400&quot;,&quot;style&quot;:&quot;normal&quot;,&quot;size&quot;:&quot;14&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;count&quot;:&quot;4&quot;,&quot;type&quot;:&quot;1&quot;,&quot;title&quot;:&quot;block&quot;,&quot;text&quot;:&quot;block&quot;,&quot;link&quot;:&quot;block&quot;}}" />
+                <input type="hidden" id="adexchangebundle_adunit_styleSetting" name="adexchangebundle_adunit[styleSetting]" value="{&quot;image&quot;:{&quot;size&quot;:&quot;80px&quot;},&quot;title&quot;:{&quot;color&quot;:&quot;#0668a7&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;14px&quot;},&quot;text&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;link&quot;:{&quot;color&quot;:&quot;#3aa126&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;border&quot;:{&quot;color&quot;:&quot;transparent&quot;,&quot;size&quot;:&quot;0px&quot;},&quot;baner&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;max_width&quot;:&quot;100%&quot;},&quot;tizer&quot;:{&quot;width&quot;:&quot;50%&quot;,&quot;sign&quot;:&quot;block&quot;,&quot;max_width&quot;:&quot;100%&quot;,&quot;display&quot;:&quot;block&quot;,&quot;content&quot;:&quot;Смотрите также&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;weight&quot;:&quot;400&quot;,&quot;style&quot;:&quot;normal&quot;,&quot;pos&quot;:&quot;left&quot;,&quot;size&quot;:&quot;14&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;count&quot;:&quot;4&quot;,&quot;type&quot;:&quot;1&quot;,&quot;title&quot;:&quot;block&quot;,&quot;text&quot;:&quot;block&quot;,&quot;link&quot;:&quot;block&quot;}}" />
                 <input type="hidden" id="adexchangebundle_adunit__token" name="adexchangebundle_adunit[_token]" value="6fSa_h-Esq2yEXKQQY_JdeDrjAWIi-P4Jt_HkCDAWpU" />
             </form>
             <form id="validate_form" action="http://jigsaw.w3.org/css-validator/validator" enctype="multipart/form-data" method="post" target="_blank">
@@ -757,28 +723,20 @@ FTP: ftp://vh24.timeweb.ru
 
 <!-- /#wrapper -->
 <!-- jQuery -->
-<script src="/bundles/adexchange/js/jquery.js"></script>
-    <script>
+<script src="bundles/adexchange/js/jquery.js"></script>
 
-
-        $(function() {
-            $('.sliding .form-control').click(function() {
-                $("html, body").animate({ scrollTop: $('#tizerAds').offset().top }, 500);
-            });
-        });
-    </script>
 <!-- Bootstrap Core JavaScript -->
-<script src="/bundles/adexchange/js/bootstrap.js"></script>
+<script src="bundles/adexchange/js/bootstrap.js"></script>
 
 <!-- Metis Menu Plugin JavaScript -->
-<script src="/bundles/adexchange/js/metisMenu.js"></script>
+<script src="bundles/adexchange/js/metisMenu.js"></script>
 
 <!-- Morris Charts JavaScript -->
-<script src="/bundles/adexchange/js/raphael-min.js"></script>
-<script src="/bundles/adexchange/js/morris.min.js"></script>
+<script src="bundles/adexchange/js/raphael-min.js"></script>
+<script src="bundles/adexchange/js/morris.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/bundles/adexchange/js/sb-admin-2.js"></script>
+<script src="bundles/adexchange/js/sb-admin-2.js"></script>
 
 <script>
     var params = params || {};
@@ -786,22 +744,22 @@ FTP: ftp://vh24.timeweb.ru
         finishAtIncrement: '10'
     });
 </script>
-<script src="/bundles/adexchange/js/main.js"></script>
+<script src="bundles/adexchange/js/main.js"></script>
 
-<script type="text/javascript" src="/bundles/adexchange/js/moment.js"></script>
-<script type="text/javascript" src="/bundles/adexchange/js/daterangepicker.js"></script>
-<script type="text/javascript" src="/bundles/adexchange/js/bootstrap-datepicker.min.js"></script>
-<script type="text/javascript" src="/bundles/adexchange/js/bootstrap-clockpicker.min.js"></script>
+<script type="text/javascript" src="bundles/adexchange/js/moment.js"></script>
+<script type="text/javascript" src="bundles/adexchange/js/daterangepicker.js"></script>
+<script type="text/javascript" src="bundles/adexchange/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="bundles/adexchange/js/bootstrap-clockpicker.min.js"></script>
 
-<script type="text/javascript" src="/bundles/adexchange/js/bootstrap-combobox.js"></script>
+<script type="text/javascript" src="bundles/adexchange/js/bootstrap-combobox.js"></script>
 
 <!-- jsTree -->
-<script type="text/javascript" src="/bundles/adexchange/js/jstree.min.js"></script>
+<script type="text/javascript" src="bundles/adexchange/js/jstree.min.js"></script>
 
 
 
 
-<script type="text/javascript" src="/bundles/adexchange/js/ace/ace.js"></script>
+<script type="text/javascript" src="bundles/adexchange/js/ace/ace.js"></script>
 <script type="text/javascript">
 
     var size = {"tizer":{"1":"300x250","2":"728x90","3":"300x500","4":"600x500","6":"240x400","7":"300x600","8":"728x500","9":"600x250","10":"833x250","11":"970x90","12":"custom"},"media":{"5":"media banner"},"video":{"13":"video banner"}};
@@ -880,13 +838,13 @@ FTP: ftp://vh24.timeweb.ru
             }
             switch(bannerStyle['tizer']['type']) {
                 case '1':
-                    return '<div class="adpartner-row half"><a href="#"><img src="/bundles/adexchange/img/image200x200.jpeg" /><div class="adpartner-title">Lorem ipsum rsitpametppconse dolo</div><div class="adpartner-text adpartner-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te</div><div class="adpartner-link-for-show adpartner-margin">site.url.com.ua</div></a></div>';
+                    return '<div class="adpartner-row half"><a href="#"><img src="bundles/adexchange/img/image200x200.jpeg" /><div class="adpartner-title">Lorem ipsum rsitpametppconse dolo</div><div class="adpartner-text adpartner-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te</div><div class="adpartner-link-for-show adpartner-margin">site.url.com.ua</div></a></div>';
                 case '2':
-                    return '<div class="adpartner-row half"><a href="#"><img class="adpartner-top" src="/bundles/adexchange/img/image200x200.jpeg" /><br class="clr"><div class="adpartner-title">Lorem ipsum rsitpametppconse dolo</div><div class="adpartner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te</div><div class="adpartner-link-for-show">site.url.com.ua</div></a></div>';
+                    return '<div class="adpartner-row half"><a href="#"><img class="adpartner-top" src="bundles/adexchange/img/image200x200.jpeg" /><br class="clr"><div class="adpartner-title">Lorem ipsum rsitpametppconse dolo</div><div class="adpartner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te</div><div class="adpartner-link-for-show">site.url.com.ua</div></a></div>';
                 case '3':
                     return '<div class="adpartner-row half flex"><a href="#">' +
                             '<div class="adpartner-box">' +
-                            '<div class="adpartner-img"><img src="/bundles/adexchange/img/image200x200.jpeg" /></div>' +
+                            '<div class="adpartner-img"><img src="bundles/adexchange/img/image200x200.jpeg" /></div>' +
                             '' +
                             '<div class="adpartner-under">' +
                             '<div class="adpartner-title">Lorem ipsum rsitpametppconse dolo</div>' +
@@ -996,9 +954,10 @@ FTP: ftp://vh24.timeweb.ru
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-under .adpartner-text{padding:2px 5px}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-under .adpartner-link-for-show{padding:2px 5px}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-row.half{margin:0;padding:5px;position:relative;}' +
+                            '#adpartner-jsunit-' + unit_id + ' .sign{display:'+ bannerStyle['tizer']['sign'] +';}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-row.half:before{content:"";background: url(' + bannerStyle['tizer']['background'] + ') no-repeat; background-size: 50%; position:absolute; top:-4px;left:-2px;width:120px;height:120px;}' +
-                            '#adpartner-jsunit-' + unit_id + ' .head-text{position:relative;height:'+ bannerStyle['tizer']['size'] * 1.8 + 'px;}' +
-                            '#adpartner-jsunit-' + unit_id + ' .head-text:before {content: "'+ bannerStyle['tizer']['content'] +'";font-family:"'+ bannerStyle['tizer']['font'] +'";font-size:'+ bannerStyle['tizer']['size'] +'px;font-weight:'+ bannerStyle['tizer']['weight'] +';font-style:'+ bannerStyle['tizer']['style'] +';position: absolute;width: 100%;}';            }
+                            '#adpartner-jsunit-' + unit_id + ' .head-text{display:'+ bannerStyle['tizer']['display'] +';position:relative;height:'+ bannerStyle['tizer']['size'] * 1.8 + 'px;}' +
+                            '#adpartner-jsunit-' + unit_id + ' .head-text:before {content: "'+ bannerStyle['tizer']['content'] +'";text-align:'+ bannerStyle['tizer']['pos'] +';font-family:"'+ bannerStyle['tizer']['font'] +'";font-size:'+ bannerStyle['tizer']['size'] +'px;font-weight:'+ bannerStyle['tizer']['weight'] +';font-style:'+ bannerStyle['tizer']['style'] +';position: absolute;width: 100%;}';            }
         }
 
         function renderBanner() {
@@ -1142,6 +1101,14 @@ FTP: ftp://vh24.timeweb.ru
             bannerStyle['tizer']['count'] = $(this).val();
             renderBanner();
         });
+        $('#headPos').change(function(){
+            bannerStyle['tizer']['pos'] = $(this).val();
+            renderBanner();
+        });
+        $('#headShow').change(function(){
+            bannerStyle['tizer']['display'] = this.checked ? 'block' : 'none';
+            renderBanner();
+        });
         $('#tizerTitle').change(function(){
             bannerStyle['tizer']['title'] = this.checked ? 'block' : 'none';
             renderBanner();
@@ -1152,6 +1119,10 @@ FTP: ftp://vh24.timeweb.ru
         });
         $('#tizerLink').change(function(){
             bannerStyle['tizer']['link'] = this.checked ? 'block' : 'none';
+            renderBanner();
+        });
+        $('#tizerSign').change(function(){
+            bannerStyle['tizer']['sign'] = this.checked ? 'block' : 'none';
             renderBanner();
         });
         $('#tizerType').change(function(){
@@ -1208,8 +1179,11 @@ FTP: ftp://vh24.timeweb.ru
             $('#headFont').val(bannerStyle['tizer']['font']);
             $('#headWeight').val(bannerStyle['tizer']['weight']);
             $('#headStyle').val(bannerStyle['tizer']['style']);
+            $('#headPos').val(bannerStyle['tizer']['pos']);
             $('#tizerCount').val(bannerStyle['tizer']['count']);
             $('#tizerType').val(bannerStyle['tizer']['type']);
+            $('#tizerSign').attr('checked', bannerStyle['tizer']['sign'] == 'block' ? true : false);
+            $('#headShow').attr('checked', bannerStyle['tizer']['display'] == 'block' ? true : false);
             $('#tizerTitle').attr('checked', bannerStyle['tizer']['title'] == 'block' ? true : false);
             $('#tizerText').attr('checked', bannerStyle['tizer']['text'] == 'block' ? true : false);
             $('#tizerLink').attr('checked', bannerStyle['tizer']['link'] == 'block' ? true : false);
@@ -1286,9 +1260,34 @@ FTP: ftp://vh24.timeweb.ru
     $("#titleSweight").change(function() {
         $('.preview-s-title').css("font-weight", $(this).val());
     });
+    $("#previewDevice").change(function() {
+        $('.panel-body.preview').css("max-width", $(this).val());
+    });
+    $("#previewImg").change(function() {
+        $('.panel-body.preview .preview-img').css("float", $(this).val());
+        if($(this).val()=="left"){
+            $('.panel-body.preview .preview-text').removeClass("img-right").addClass("img-left");
+        }
+        if($(this).val()=="right"){
+            $('.panel-body.preview .preview-text').removeClass("img-left").addClass("img-right");
+        }
+        if($(this).val()=="none"){
+            $('.panel-body.preview .preview-text').removeClass("img-left").removeClass("img-right");
+        }
+    });
+
 
 </script>
 
+    <!--<option value="100%">На весь экран</option>-->
+    <!--<option value="320px">iPhone 4</option>-->
+    <!--<option value="375px">iPhone 6</option>-->
+    <!--<option value="414px">iPhone 6 Plus</option>-->
+    <!--<option value="768px">iPad</option>-->
+    <!--<option value="360px">Galaxy S5</option>-->
+    <!--<option value="412px">Nexus</option>-->
+    <!--<option value="360px">Nokia N9</option>-->
+    <!--<option value="360px">BlackBerry Z30</option>-->
     <script>
 //tizerCount #tizerWidth
 $(document).ready(function() {
@@ -1337,16 +1336,4 @@ $(document).ready(function() {
     </script>
 </div>
 </body>
-<!--<option value="100%">1</option>-->
-<!--<option value="50%">2</option>-->
-<!--<option value="33.33333%">3</option>-->
-<!--<option value="25%">4</option>-->
-<!--<option value="20%">5</option>-->
-<!--<option value="16.6666667%">6</option>-->
-<!--<option value="14.2857143%">7</option>-->
-<!--<option value="12.5%">8</option>-->
-<!--<option value="11.1111111%">9</option>-->
-<!--<option value="10%">10</option>-->
-<!--<option value="9.09090909%">11</option>-->
-<!--<option value="8.33333333%">12</option>-->
 </html>

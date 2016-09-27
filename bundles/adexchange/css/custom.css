@@ -165,9 +165,6 @@ label {
 .panel-body {
     background-color: #eceef1;
 }
-.panel-body.preview {
-    background-color: #ffffff;
-}
 
 #page-wrapper {
     margin: 51px 0 0 360px
@@ -265,15 +262,54 @@ label {
     font-size: 22px;
 }
 
+.panel-body.preview {
+    background-color: #ffffff;
+    margin: 0 auto;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: 1em auto;
+    background: #EFEFEF;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1em;
+}
+
 .preview-img {
     position: relative;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
     width: 100%;
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 10px;
     background-position: 50% 50%;
-    margin: 10px 0;
     border-radius: 2px;
+}
+
+.preview-text {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.preview-text.img-left,
+.preview-text.img-right {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.preview-text.img-left .preview-img,
+.preview-text.img-right .preview-img {
+    width: 30%;
+}
+.preview-text.img-left .preview-img {
+    margin-right: 15px;
+}
+.preview-text.img-right .preview-img {
+    margin-left: 15px;
 }

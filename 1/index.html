@@ -1,0 +1,1266 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- TITLE OF SITE -->
+    <title>Relap</title>
+
+    <meta name="description" content="Relap — простой инструмент для персонализации контента, который вы можете установить к себе на сайт" />
+    <meta name="keywords" content="relap" />
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title" content="Relap">
+    <meta property="og:description" content="Relap — простой инструмент для персонализации контента, который вы можете установить к себе на сайт"/>
+    <meta property="og:image" content="https://relap.io/images/relap_logo.png?66db754a0260553"/>
+
+    <!-- =========================
+      FAV AND TOUCH ICONS  
+    ============================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png?0470fc04119125cc" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-194x194.png?4f3bea3467ea85ff" sizes="194x194">
+    <link rel="icon" type="image/png" href="favicon-96x96.png?f6de56b951c2c456" sizes="96x96">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png?ba47790a51edc695" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-16x16.png?abc64e8cf9b73d2c" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#33c4cd">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="theme-color" content="#363f46">
+
+    <!-- =========================
+      Adobe font typekit
+    ==============================-->
+    <script src="https://use.typekit.net/nao6whd.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Facebook Pixel Code -->
+    <script> !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n; n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1192563147425997'); fbq('track', "PageView");</script> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1192563147425997&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- =========================
+       STYLESHEETS 
+    ============================== -->
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js?v=1"></script>
+    <script src="js/respond.min.js?v=1"></script>
+    <![endif]-->
+
+    <!-- SCRIPTS -->
+    <script src="js/relap_themes.min.js?00c0eeaba965da16"></script>
+    <script src="js/app.min.js?92d3edb64394d704#grunt-cache-bust"></script>
+
+</head>
+
+
+<body>
+
+<div class="js-widget-instance-popup-container"><ul><li><section class="widget-popup-container" style="display: block;">
+    <div class="widget-popup-bg"></div>
+    <div class="widget-popup">
+        <a href="#" class="icn-wrapper widget-popup__close-button">
+            <svg class="svg-icon-close-light" width="34px" height="34px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic_close_light"></use></svg>
+        </a>
+
+        <h1 class="widget-popup__header">
+            <form class="widget-popup__header__inner js-widget-title-wrapper">
+        <span class="widget-popup__header__widget-icon">
+          <svg class="svg-icon-widget-footer-plates size-small"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic_wt_footer"></use></svg>
+        </span>
+                <input type="text" disabled="disabled" class="widget-popup__header__widget-title js-widget-title" value="Стандартный виджет" name="">
+                <a href="#" class="widget-popup__header__edit-icon js-edit-widget-title-link">
+                    <svg class="svg-icon-edit-white"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic_pencil"></use></svg>
+                </a>
+            </form>
+        </h1>
+
+        <div class="widget-popup__body">
+            <div class="widget-popup__body__left-side">
+                <div class="widget-popup__body__preview">
+                    <h2 class="widget-popup__body__preview__title">
+            <span>
+              <svg class="svg-icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic_arrow"></use></svg>
+            </span>
+                        <span>Предосмотр</span>
+                    </h2>
+
+                    <div class="widget-popup__body__preview__content"><iframe class="widget-popup__body__preview__content__iframe" src="https://relap.io/widgets/preview/CAjmAA" frameborder="0" width="100%" height="100%"></iframe>
+                    </div>
+                </div>
+
+                <div class="widget-popup__body__promotion collapsed">
+                    <h2 class="widget-popup__body__promotion__title">
+            <span>
+              <svg class="svg-icon-promo-link"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ws_promoURL_ic_promoURL"></use></svg>
+            </span>
+                        <span>Промотировать определенный URL</span>
+                    </h2>
+
+                    <div class="widget-popup__body__promotion__content">
+                        <div class="promoted-urls"><h2 class="promoted-urls__header">
+  <span>
+    <svg class="svg-icon-promo-link"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ws_promoURL_ic_promoURL"></use></svg>
+  </span>
+                            <span>Промотировать определенный URL</span>
+
+  <span class="promoted-urls__help">
+    <svg width="34px" height="34px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic_help"></use></svg>
+  </span>
+                        </h2>
+
+                            <div class="promoted-urls__add-container">
+                                <input type="text" class="promoted-urls__add-input js-promoted-url-input" placeholder="скопируйте сюда ссылку" value="">
+
+                                <a href="#" class="promoted-urls__add-link icn-wrapper js-add-disclaimer-link">
+                                    <svg class="svg-icon-promo-add"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ws_promoURL_ic_add"></use></svg>
+                                </a>
+
+                                <div class="promoted-urls__add-error">
+                                    Некорректная ссылка
+                                    <a href="#" class="promoted-urls__reload">Повторите попытку</a>
+                                </div>
+                            </div>
+
+                            <div class="promoted-urls__add-controls">
+                                <input type="text" class="promoted-urls__disclaimer-input js-disclaimer-input" value="" placeholder="укажите дисклеймер, если это необходимо">
+                            </div>
+
+                            <table class="promoted-urls__list"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget-popup__body__right-side">
+                <a class="widget-popup__need-help-link" href="http://help.relap.info/contact" target="_blank">Нужна помощь?</a>
+
+                <div class="widget-popup__body__settings__form-container">
+                    <form action="" name="widget-popup-settings" class="widget-popup__body__settings__form">
+                        <div class="widget-popup__body__anchor-code">
+                            <h2 class="widget-popup__body__anchor-code__main-header">
+                                <span class="icn-step-round-grey">3</span>
+                                <span>Расположение виджета</span>
+                            </h2>
+
+
+                            <h3 class="widget-popup__body__anchor-code__header">
+                                Укажите CSS селектор элемента на вашей странице, перед которым хотите разместить виджет
+                            </h3>
+
+
+                            <div class="widget-popup__settings-row">
+                                <div class="widget-popup__settings__group-left">
+                                    <label for="widget-popup__settings__insert-before-elem-select-input">Вставить перед элементом, CSS селектор</label>
+                                </div>
+
+                                <div class="widget-popup__settings__group-right">
+                                    <input name="insertBeforeElemSelect" type="text" id="widget-popup__settings__insert-before-elem-select-input" class="widget-popup__settings__insert-before-elem-select-input" value="" maxlength="200">
+                                </div>
+                            </div>
+
+
+                            <div class="widget-popup__body__anchor-code__delimiter">
+                                <span class="widget-popup__body__anchor-code__delimiter__border"></span>
+                                <span>ИЛИ</span>
+                            </div>
+
+                            <h3 class="widget-popup__body__anchor-code__header">
+    <span>
+      <svg width="34px" height="34px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic_code"></use></svg>
+    </span>
+                                <span>Скопируйте якорный скрипт в html-документ вашего сайта, где хотите разместить виджет</span>
+                            </h3>
+
+                            <textarea class="widget-popup__body__anchor-code__text" readonly="">&lt;script id="S7RLsXGxxwP57jY2"&gt;if (window.relap) window.relap.ar('S7RLsXGxxwP57jY2');&lt;/script&gt;</textarea>
+
+
+
+
+
+
+
+                            <div class="widget-popup__settings-row">
+                                <div class="widget-popup__settings__group-left">
+                                    <label class="half-label">Прятать виджет, если ширина окна браузера менее, px</label>
+                                </div>
+
+                                <div class="widget-popup__settings__group-right">
+                                    <input name="windowMinWidth" type="text" class="half-input" value="" maxlength="100">
+                                </div>
+                            </div>
+
+
+
+                            <div class="widget-popup__settings-row">
+                                <div class="widget-popup__settings__group-left">
+                                    <label class="half-label">Прятать виджет, если ширина окна браузера более, px</label>
+                                </div>
+
+                                <div class="widget-popup__settings__group-right">
+                                    <input name="windowMaxWidth" type="text" class="half-input" value="" maxlength="100">
+                                </div>
+                            </div>
+
+
+                            <div class="widget-popup__body__anchor-code__info">
+                                При первоначальной установке виджета происходит индексация страниц вашего сайта, которая может занять несколько часов в зависимости от размера сайта. Если по истечении этого времени виджет не появился, <a href="http://help.relap.info/contact" target="_blank">обратитесь в службу поддержки</a>.
+                            </div>
+                        </div>
+
+                        <div class="widget-popup__body__settings__view">
+
+                            <h2 class="widget-popup__body__settings__primary-header">
+                                <span>Внешний вид</span>
+                            </h2>
+
+                            <div class="widget-popup__body__settings__primary-control">
+
+
+                                <div class="widget-popup__body__anchor-code__delimiter grey">
+                                    <span class="widget-popup__body__anchor-code__delimiter__border"></span>
+                                    <span>Главный заголовок</span>
+                                </div>
+
+                                <div class="widget-popup__settings-row">
+
+                                    <div class="widget-popup__settings__group-left">
+                                        <input type="checkbox" class="near-big-input" value="1" name="with_block_title" checked="checked">
+                                    </div>
+
+
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="title" type="text" class="widget-popup__settings__title-input" value="Стоит прочитать" maxlength="70">
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label class="near-big-input">Шрифт</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="blockTitleFont">
+
+                                            <option value="arial" selected="">Arial, Helvetica</option>
+
+                                            <option value="arialblack">Arial Black, Gadget</option>
+
+                                            <option value="impact">Impact, Charcoal</option>
+
+                                            <option value="tahoma">Tahoma, Geneva</option>
+
+                                            <option value="trebuchetms">Trebuchet MS, Helvetica</option>
+
+                                            <option value="verdana">Verdana, Geneva</option>
+
+                                            <option value="georgia">Georgia</option>
+
+                                            <option value="palatino">Palatino</option>
+
+                                            <option value="times">Times New Roman</option>
+
+                                            <option value="opensans">Open Sans</option>
+
+                                            <option value="roboto">Roboto</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__block-title-font-size-input">Размер шрифта, CSS значение</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="blockTitleFontSize" type="text" id="widget-popup__settings__block-title-font-size-input" class="widget-popup__settings__block-title-font-size-input" value="" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__block-title-line-height-input">Высота строки, CSS значение</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="blockTitleLineHeight" type="text" id="widget-popup__settings__block-title-line-height-input" class="widget-popup__settings__block-title-line-height-input" value="" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__block-title-font-weight-input" class="near-big-input">Насыщенность шрифта</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="blockTitleFontWeight" id="widget-popup__settings__block-title-font-weight-input">
+
+                                            <option value="100">thin (100)</option>
+
+                                            <option value="200">200</option>
+
+                                            <option value="300">light (300)</option>
+
+                                            <option value="400" selected="">normal (400)</option>
+
+                                            <option value="500">medium (500)</option>
+
+                                            <option value="600">semi-bold (600)</option>
+
+                                            <option value="700">bold (700)</option>
+
+                                            <option value="800">extra-bold (800)</option>
+
+                                            <option value="900">ultra-bold (900)</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__block-title-font-style-input" class="near-big-input">Начертание шрифта</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="blockTitleFontStyle" id="widget-popup__settings__block-title-font-style-input">
+
+                                            <option value="normal" selected="">обычное</option>
+
+                                            <option value="italic">курсивное</option>
+
+                                            <option value="oblique">наклонное</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__body__anchor-code__delimiter grey">
+                                    <span class="widget-popup__body__anchor-code__delimiter__border"></span>
+                                    <span>Количество рекомендаций</span>
+                                </div>
+
+                                <div class="widget-popup__settings-row">
+
+                                    <div class="widget-popup__settings__group-left">
+                                        <label class="near-big-input">Колонки</label>
+                                        <select name="cols" "="">
+
+                                        <option value="1">1</option>
+
+                                        <option value="2">2</option>
+
+                                        <option value="3" selected="">3</option>
+
+                                        <option value="4">4</option>
+
+                                        <option value="5">5</option>
+
+                                        </select>
+                                    </div>
+
+
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <label class="near-big-input">Ряды</label>
+                                        <select name="rows">
+
+                                            <option value="1">1</option>
+
+                                            <option value="2" selected="">2</option>
+
+                                            <option value="3">3</option>
+
+                                            <option value="4">4</option>
+
+                                            <option value="5">5</option>
+
+                                            <option value="6">6</option>
+
+                                            <option value="7">7</option>
+
+                                            <option value="8">8</option>
+
+                                            <option value="9">9</option>
+
+                                            <option value="10">10</option>
+
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="widget-popup__body__anchor-code__delimiter grey">
+                                    <span class="widget-popup__body__anchor-code__delimiter__border"></span>
+                                    <span>Иллюстрации</span>
+                                </div>
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+
+                                        <input type="checkbox" id="widget-popup__settings__no-image-input" class="near-big-input" value="1" name="hasImages" checked="checked">
+
+                                        <label for="widget-popup__settings__no-image-input" class="near-big-input">Иллюстрации</label>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <select name="illustrationType" class="widget-popup__settings__illustration-type">
+
+                                        <option value="standard" selected="">стандартные (21x16)</option>
+
+                                        <option value="wide">широкие (3x2)</option>
+
+                                        <option value="ultraWide">ультраширокие (23x13)</option>
+
+                                        <option value="square">квадратные (1x1)</option>
+
+                                        <option value="vertical">вертикальные (16x21)</option>
+
+                                    </select>
+                                </div>
+
+
+
+
+
+                                <div class="widget-popup__body__anchor-code__delimiter grey">
+                                    <span class="widget-popup__body__anchor-code__delimiter__border"></span>
+                                    <span>Заголовки</span>
+                                </div>
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+
+                                        <input type="checkbox" id="widget-popup__settings__with-title-input" class="near-big-input" value="1" name="with_title" checked="checked">
+
+                                        <label for="widget-popup__settings__with-title-input" class="near-big-input">Заголовки</label>
+                                    </div>
+
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="headLinesCount">
+
+                                            <option value="0">Все строки</option>
+
+                                            <option value="1">1 строка</option>
+
+                                            <option value="2" selected="">2 строки</option>
+
+                                            <option value="3">3 строки</option>
+
+                                            <option value="4">4 строки</option>
+
+                                            <option value="5">5 строк</option>
+
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__title-margin-top-input">Отступ сверху, CSS значение</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="titleMarginTop" type="text" id="widget-popup__settings__title-margin-top-input" class="widget-popup__settings__title-margin-top-input" value="" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label class="near-big-input" for="widget-popup__settings__title-font-input">Шрифт</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="titleFont" id="widget-popup__settings__title-font-input" class="widget-popup__settings__title-font-input">
+
+                                            <option value="arial" selected="">Arial, Helvetica</option>
+
+                                            <option value="arialblack">Arial Black, Gadget</option>
+
+                                            <option value="impact">Impact, Charcoal</option>
+
+                                            <option value="tahoma">Tahoma, Geneva</option>
+
+                                            <option value="trebuchetms">Trebuchet MS, Helvetica</option>
+
+                                            <option value="verdana">Verdana, Geneva</option>
+
+                                            <option value="georgia">Georgia</option>
+
+                                            <option value="palatino">Palatino</option>
+
+                                            <option value="times">Times New Roman</option>
+
+                                            <option value="opensans">Open Sans</option>
+
+                                            <option value="roboto">Roboto</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__title-font-size-input">Размер шрифта, CSS значение</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="titleFontSize" type="text" id="widget-popup__settings__title-font-size-input" class="widget-popup__settings__title-font-size-input" value="" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__title-line-height-input">Высота строки, CSS значение</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="titleLineHeight" type="text" id="widget-popup__settings__title-line-height-input" class="widget-popup__settings__title-line-height-input" value="" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__title-font-weight-input" class="near-big-input">Насыщенность шрифта</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="titleFontWeight" id="widget-popup__settings__title-font-weight-input">
+
+                                            <option value="100">thin (100)</option>
+
+                                            <option value="200">200</option>
+
+                                            <option value="300">light (300)</option>
+
+                                            <option value="400" selected="">normal (400)</option>
+
+                                            <option value="500">medium (500)</option>
+
+                                            <option value="600">semi-bold (600)</option>
+
+                                            <option value="700">bold (700)</option>
+
+                                            <option value="800">extra-bold (800)</option>
+
+                                            <option value="900">ultra-bold (900)</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__title-font-style-input" class="near-big-input">Начертание шрифта</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="titleFontStyle" id="widget-popup__settings__title-font-style-input">
+
+                                            <option value="normal" selected="">обычное</option>
+
+                                            <option value="italic">курсивное</option>
+
+                                            <option value="oblique">наклонное</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__body__anchor-code__delimiter grey">
+                                    <span class="widget-popup__body__anchor-code__delimiter__border"></span>
+                                    <span>Описание</span>
+                                </div>
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+
+                                        <input type="checkbox" id="widget-popup__settings__with-description-input" class="near-big-input" value="1" name="with_description" checked="checked">
+
+                                        <label for="widget-popup__settings__with-description-input" class="near-big-input">Описание</label>
+                                    </div>
+
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="descLinesCount">
+
+                                            <option value="0">Все строки</option>
+
+                                            <option value="1">1 строка</option>
+
+                                            <option value="2" selected="">2 строки</option>
+
+                                            <option value="3">3 строки</option>
+
+                                            <option value="4">4 строки</option>
+
+                                            <option value="5">5 строк</option>
+
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__description-margin-top-input">Отступ сверху, CSS значение</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="descriptionMarginTop" type="text" id="widget-popup__settings__description-margin-top-input" class="widget-popup__settings__description-margin-top-input" value="" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label class="near-big-input" for="widget-popup__settings__description-font-input">Шрифт</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="descriptionFont" id="widget-popup__settings__description-font-input" class="widget-popup__settings__description-font-input">
+
+                                            <option value="arial" selected="">Arial, Helvetica</option>
+
+                                            <option value="arialblack">Arial Black, Gadget</option>
+
+                                            <option value="impact">Impact, Charcoal</option>
+
+                                            <option value="tahoma">Tahoma, Geneva</option>
+
+                                            <option value="trebuchetms">Trebuchet MS, Helvetica</option>
+
+                                            <option value="verdana">Verdana, Geneva</option>
+
+                                            <option value="georgia">Georgia</option>
+
+                                            <option value="palatino">Palatino</option>
+
+                                            <option value="times">Times New Roman</option>
+
+                                            <option value="opensans">Open Sans</option>
+
+                                            <option value="roboto">Roboto</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__description-font-size-input">Размер шрифта, CSS значение</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="descriptionFontSize" type="text" id="widget-popup__settings__description-font-size-input" class="widget-popup__settings__description-font-size-input" value="" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__description-line-height-input">Высота строки, CSS значение</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="descriptionLineHeight" type="text" id="widget-popup__settings__description-line-height-input" class="widget-popup__settings__description-line-height-input" value="" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__description-font-weight-input" class="near-big-input">Насыщенность шрифта</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="descriptionFontWeight" id="widget-popup__settings__description-font-weight-input">
+
+                                            <option value="100">thin (100)</option>
+
+                                            <option value="200">200</option>
+
+                                            <option value="300">light (300)</option>
+
+                                            <option value="400" selected="">normal (400)</option>
+
+                                            <option value="500">medium (500)</option>
+
+                                            <option value="600">semi-bold (600)</option>
+
+                                            <option value="700">bold (700)</option>
+
+                                            <option value="800">extra-bold (800)</option>
+
+                                            <option value="900">ultra-bold (900)</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__description-font-style-input" class="near-big-input">Начертание шрифта</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <select name="descriptionFontStyle" id="widget-popup__settings__description-font-style-input">
+
+                                            <option value="normal" selected="">обычное</option>
+
+                                            <option value="italic">курсивное</option>
+
+                                            <option value="oblique">наклонное</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <h2 class="widget-popup__body__settings__secondary-header">
+                                <span>Дополнительно</span>
+                            </h2>
+
+                            <div class="widget-popup__body__settings__secondary-control">
+
+                                <div class="widget-popup__settings-row">
+                                    <input type="checkbox" id="widget-popup__settings__under-header-line-input" class="near-big-input" value="1" name="underHeaderLine" checked="checked">
+                                    <label for="widget-popup__settings__under-header-line-input" class="near-big-input">Линия под заголовком</label>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <input type="checkbox" id="widget-popup__settings__clickable-item-input" class="near-big-input" value="1" name="clickableItem" checked="checked">
+                                    <label for="widget-popup__settings__clickable-item-input" class="near-big-input">Полноразмерная ссылка</label>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <input type="checkbox" id="widget-popup__settings__responsive-title-font-input" class="near-big-input" value="1" name="responsiveTitleFont">
+                                    <label for="widget-popup__settings__responsive-title-font-input" class="near-big-input">Отзывчивый размер заголовков</label>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <input type="checkbox" id="widget-popup__settings__preserve-row-quantity-input" class="near-big-input" value="1" name="preserve_rows_quantity">
+                                    <label for="widget-popup__settings__preserve-row-quantity-input" class="near-big-input">Сохранять количество рядов</label>
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <input type="checkbox" class="near-big-input" value="1" name="openInNewTab">
+                                    <label class="near-big-input">Открывать рекомендации в новой вкладке</label>
+                                </div>
+
+
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <input type="checkbox" id="widget-popup__settings__only-ads-needed-input" class="near-big-input" value="1" name="hasPreloader" checked="checked">
+                                    <label for="widget-popup__settings__only-ads-needed-input" class="near-big-input">Показывать прелоадер при загрузке</label>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <input type="checkbox" id="widget-popup__settings__only-ads-needed-input" class="near-big-input" value="1" name="onlyAdsNeeded">
+                                    <label for="widget-popup__settings__only-ads-needed-input" class="near-big-input">Показывать только рекламу</label>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__adv-block-count-input">Максимальное число рекламных рекомендаций</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="advBlocksCount" type="text" id="widget-popup__settings__adv-block-count-input" class="widget-popup__settings__adv-block-count-input" value="1" maxlength="10">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__ad-label-input">Маркировка рекламных рекомендаций</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="adLabel" type="text" id="widget-popup__settings__ad-label-input" class="widget-popup__settings__ad-label-input" value="" placeholder="Реклама" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__utm-from-input">UTM параметры, начинающиеся с /?</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="utm_from" type="text" id="widget-popup__settings__utm-from-input" class="widget-popup__settings__utm-from-input" value="" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__utm-hash-from-input">UTM параметры, начинающиеся с /#</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="utm_hash_from" type="text" id="widget-popup__settings__utm-hash-from-input" class="widget-popup__settings__utm-hash-from-input" value="" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label for="widget-popup__settings__load-priority-input">Приоритет загрузки</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="loadPriority" type="text" id="widget-popup__settings__load-priority-input" class="widget-popup__settings__load-priority-input" value="200" maxlength="100">
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <div class="widget-popup__settings__group-left">
+                                        <label class="widget-popup__settings__two-third-label">Максимальное время ожидания элементов на странице, сек</label>
+                                    </div>
+
+                                    <div class="widget-popup__settings__group-right">
+                                        <input name="waitForElemTimeout" type="text" class="widget-popup__settings__one-third-input" value="1" maxlength="5">
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="widget-popup__settings-row">
+                                    <a href="#" class="widget-popup__settings__reset-settings-link">Сбросить настройки</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <div class="js-traffic-exchange-form">
+                    </div>
+                    <div class="js-traffic-exchange-config">
+                    </div>
+                </div>
+
+                <div class="widget-popup__body__submit">
+                    <a href="#" class="widget-popup__body__submit__cancel">Отмена</a>
+                    <a href="#" class="widget-popup__body__submit__confirm">Сохранить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</li><li></li><li></li><li></li><li></li></ul></div>
+
+
+<!-- GA -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-72751634-1', 'auto');
+    ga('send', 'pageview');
+
+    $(document).ready(function() {
+        var waitFunnelsIntervalId = setInterval(function() {
+            try {
+                if ($('.js-ga-footer-lang').length && $('.spinner-wrapper:visible').length === 0) {
+                    clearInterval(waitFunnelsIntervalId);
+                    onReady();
+                }
+            } catch(e){}
+        }, 1000);
+
+        function onReady() {
+            try {
+                $(window).scrollTo(0, 0);
+                function checkIfScrolled(elem) {
+                    var viewTop = $(window).scrollTop();
+                    var viewBottom = viewTop + $(window).height();
+                    var elemTop = $(elem).offset().top;
+                    var elemBottom = elemTop + $(elem).height();
+                    return elemTop < viewBottom;
+                }
+
+                var absoluteTimer = 0; // Время в секундах до наступления события Х
+                setInterval(function() { absoluteTimer += 0.1 }, 100);
+
+                var funnels = ['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh'];
+                var funnels_html = funnels.map(function(val, idx) { return $('.js-ga-funnel-' + (idx + 1))[0] } );
+                var funnelWasIntoView = funnels.map(function(val) { return false } ); // Событие "доскроллили" вызываем только один раз
+
+                var prevFunnelVisitTime = 0;
+                $(window).scroll(function() {
+                    funnels_html.forEach(function(funnel, idx) {
+                        try {
+                            if (funnelWasIntoView[idx]) return;
+                            if (checkIfScrolled(funnel)) {
+                                ga('send', 'event', 'ViewFunnel', funnels[idx] + 'Scroll', absoluteTimer.toFixed(1) + ' | ' + (absoluteTimer - prevFunnelVisitTime).toFixed(1));
+                                prevFunnelVisitTime = absoluteTimer.toFixed(1);
+                                funnelWasIntoView[idx] = true;
+                            }
+                        } catch(e){}
+                    });
+                });
+
+
+                function buttonHeadEvent(label) {
+                    try { ga('send', 'event', 'ButtonHead', label, absoluteTimer.toFixed(1)); } catch(e){}
+                }
+
+                $('.js-ga-nav-logo')
+                        .one('mouseenter', function() { buttonHeadEvent('RelapNav') })
+                        .one('click', function() { buttonHeadEvent('RelapClick') });
+
+                $('.js-ga-nav-about')
+                        .one('mouseenter', function() { buttonHeadEvent('AboutNav') })
+                        .one('click', function() { buttonHeadEvent('AboutClick') });
+
+                $('.js-ga-nav-cases')
+                        .one('mouseenter', function() { buttonHeadEvent('CasesNav') })
+                        .one('click', function() { buttonHeadEvent('CasesClick') });
+
+                $('.js-ga-nav-contacts')
+                        .one('mouseenter', function() { buttonHeadEvent('ContactsNav') })
+                        .one('click', function() { buttonHeadEvent('ContactsClick') });
+
+
+                function buttonCTAEvent(action, selectedCase) {
+                    var label = '' + absoluteTimer.toFixed(1);
+                    if (selectedCase) label += ' | '  + selectedCase;
+                    try { ga('send', 'event', 'ButtonCTA', action, label); } catch(e){}
+                }
+
+                $('.js-ga-cta-more')
+                        .one('mouseenter', function() { buttonCTAEvent('LearnMoreNav') } )
+                        .one('click', function() { buttonCTAEvent('LearnMoreClick') } );
+
+                $('.js-ga-cta-access')
+                        .one('mouseenter', function() { buttonCTAEvent('GetAccessNav') } )
+                        .one('click', function() { buttonCTAEvent('GetAccessClick') } );
+
+                $('.js-ga-cta-adme')
+                        .one('mouseenter', function() { buttonCTAEvent('AdmeNav') } )
+                        .one('click', function() { buttonCTAEvent('AdmeClick') } );
+
+                $('.js-ga-cta-coub')
+                        .one('mouseenter', function() { buttonCTAEvent('CoubNav') } )
+                        .one('click', function() { buttonCTAEvent('CoubClick') } );
+
+                $('.js-ga-cta-ria')
+                        .one('mouseenter', function() { buttonCTAEvent('RiaNav') } )
+                        .one('click', function() { buttonCTAEvent('RiaClick') } );
+
+                $('.js-ga-cta-showmore')
+                        .one('mouseenter', function(e) {
+                            if ($(this).text() !== tr('Show more')) return;
+                            buttonCTAEvent('ShowMoreNav', $('.js-landing-case-menu-item.active').text());
+                        })
+                        .one('click', function(e) {
+                            if ($(this).text() !== tr('Show more')) return;
+                            buttonCTAEvent('ShowMoreClick', $('.js-landing-case-menu-item.active').text());
+                        });
+
+                $('.js-ga-cta-try')
+                        .one('mouseenter', function() { buttonCTAEvent('TryNav') } )
+                        .one('click', function() { buttonCTAEvent('TryClick') } );
+
+
+                function contactsEvent(action, subject, name, email, message) {
+                    var label = '' + absoluteTimer.toFixed(1);
+                    if (subject) label += ' | ' + subject;
+                    if (name && email && message) label += ' | ' + name + ' | ' + email + ' | ' + message;
+                    try { ga('send', 'event', 'Contacts', action, label); } catch(e){}
+                }
+
+                $('.js-ga-contacts-name')
+                        .one('mouseenter', function() { contactsEvent('NameNav') } )
+                        .one('change', function() { contactsEvent('NameEntering') } );
+
+                $('.js-ga-contacts-email')
+                        .one('mouseenter', function() { contactsEvent('EmailNav') } )
+                        .one('change', function() { contactsEvent('EmailEntering') } );
+
+                var selectedSubject = $('.jq-selectbox__select-text').text();
+                $('.js-ga-contacts-subject')
+                        .one('mouseenter', function() { contactsEvent('SubjNav') } )
+                        .change(function() {
+                            if (selectedSubject === $('.jq-selectbox__select-text').text()) return;
+                            selectedSubject = $('.jq-selectbox__select-text').text();
+                            contactsEvent('SubjSelected', selectedSubject);
+                        });
+
+                $('.js-ga-contacts-message')
+                        .one('mouseenter', function() { contactsEvent('MessageNav') } )
+                        .one('change', function() { contactsEvent('MessageEntering') } );
+
+                $('.js-ga-contacts-submit')
+                        .one('mouseenter', function() { contactsEvent('SendButtonNav') } )
+                        .one('click', function() {
+                            contactsEvent(
+                                    'SendButtonClick',
+                                    $('.jq-selectbox__select-text').text(),
+                                    $('.js-ga-contacts-name').val(),
+                                    $('.js-ga-contacts-email').val(),
+                                    $('.js-ga-contacts-message').val()
+                            )
+                        });
+
+
+                function footerEvent(action, language) {
+                    var label = '' + absoluteTimer.toFixed(1);
+                    if (language) label += ' | '  + language;
+                    try { ga('send', 'event', 'ButtonFooter', action, label); } catch(e){}
+                }
+
+                $('.js-ga-footer-lang')
+                        .one('mouseenter', function() { footerEvent('LanguageNav', document.documentElement.lang) } )
+                        .one('click', function(e) {
+                            e.preventDefault();
+                            footerEvent('LanguageClick', document.documentElement.lang === 'ru' ? 'en' : 'ru')
+                            setTimeout(function() { window.location = $('.js-ga-footer-lang').attr('href') }, 1000);
+                        });
+
+                $('.js-ga-footer-terms')
+                        .one('mouseenter', function() { footerEvent('TermsNav') } )
+                        .one('click', function() { footerEvent('TermsClick') } );
+
+                $('.js-ga-footer-faq')
+                        .one('mouseenter', function() { footerEvent('FaqNav') } )
+                        .one('click', function() { footerEvent('FaqClick') } );
+
+                $('.js-ga-footer-blog')
+                        .one('mouseenter', function() { footerEvent('BlogNav') } )
+                        .one('click', function() { footerEvent('BlogClick') } );
+
+                $('.js-ga-footer-contact')
+                        .one('mouseenter', function() { footerEvent('ContactUsNav') } )
+                        .one('click', function() { footerEvent('ContactUsClick') } );
+
+
+                function regEvent(action, email) {
+                    var label = '' + absoluteTimer.toFixed(1);
+                    if (email) label += ' | '  + email;
+                    try { ga('send', 'event', 'RegForm', action, label); } catch(e){}
+                }
+
+                $('.js-ga-reg-email')
+                        .one('mouseenter', function() { regEvent('EmailNav') } )
+                        .one('change', function() { regEvent('EmailEntering') } );
+
+                $('.js-ga-reg-pass')
+                        .one('mouseenter', function() { regEvent('PassNav') } )
+                        .one('change', function() { regEvent('PassEntering') } );
+
+                $('.js-ga-reg-repass')
+                        .one('mouseenter', function() { regEvent('RepassNav') } )
+                        .one('change', function() { regEvent('RepassEntering') } );
+
+                $('.js-ga-reg-agree')
+                        .one('mouseenter', function() { regEvent('AgreeNav') } )
+                        .one('click', function() { regEvent('AgreeCheck') } );
+
+                $('.js-ga-reg-terms')
+                        .one('mouseenter', function() { regEvent('TermsNav') } )
+                        .one('click', function() { regEvent('TermsClick') } );
+
+                $('.js-ga-reg-submit')
+                        .one('mouseenter', function() { regEvent('TermsNav') } )
+                        .one('click', function() { regEvent('TermsClick', $('.js-ga-reg-email').val()) } );
+
+                $('.js-ga-reg-close')
+                        .one('mouseenter', function() { regEvent('CloseNav') } )
+                        .one('click', function() { regEvent('CloseClick') } );
+
+
+                function loginEvent(action) {
+                    var label = '' + absoluteTimer.toFixed(1);
+                    try { ga('send', 'event', 'JoinForm', action, label); } catch(e){}
+                }
+
+                $('.js-ga-login-close')
+                        .one('mouseenter', function() { loginEvent('CloseNav') } )
+                        .one('click', function() { loginEvent('CloseClick') } );
+
+                $('.js-ga-login-email')
+                        .one('mouseenter', function() { regEvent('EmailNav') } )
+                        .one('change', function() { regEvent('EmailEntering') } );
+
+                $('.js-ga-login-pass')
+                        .one('mouseenter', function() { regEvent('PassNav') } )
+                        .one('change', function() { regEvent('PassEntering') } );
+
+                $('.js-ga-login-forgot')
+                        .one('mouseenter', function() { regEvent('forgotPassNav') } )
+                        .one('click', function() { regEvent('forgotPassClick') } );
+
+                $('.js-ga-login-reg')
+                        .one('mouseenter', function() { regEvent('regNav') } )
+                        .one('click', function(e) {
+                            e.preventDefault();
+                            regEvent('regClick') ;
+                            setTimeout(function() { window.location = $('.js-ga-login-reg').attr('href') }, 1000);
+                        });
+
+                $('.js-ga-login-submit')
+                        .one('mouseenter', function() { regEvent('submitNav') } )
+                        .one('click', function() { regEvent('submitClick') } );
+            } catch(e){}
+        }
+    });
+</script>
+<!-- End GA -->
+
+
+
+
+<div id="config"></div>
+
+<div id="preloader-region"></div>
+
+<div style="position: absolute; top: -2000px; left: -2000px; visibility: hidden; width: 10px; height: 10px; overflow: hidden;" class="temp-images-preloader">
+    <img src="images/landing/adme/adme_case_2x.png?05a2cd6489a7b095" alt="">
+    <img src="images/landing/adme/Radaev_avatar_2x.png?a096db3276678fd3" alt="">
+    <img src="images/landing/adme/adme_wt_2x.png?a4db295565dda6ef" alt="">
+    <img src="images/landing/coub/COUB_case_2x.png?99098dc5552bb37d" alt="">
+    <img src="images/landing/coub/Tabunov_avatar_2x.png?cc52616a9adac462" alt="">
+    <img src="images/landing/coub/coub_wt_2x.png?030e4cf64f896b21" alt="">
+</div>
+<div style="position: absolute; top: -2000px; visibility: hidden; width: 10px; height: 10px;" id="icon-defs-container">
+</div>
+
+<section id="landing-region" class="relap-outer"></section>
+
+<div id="secondary-region"></div>
+
+
+
+</body>
+</html>
