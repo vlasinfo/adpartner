@@ -269,13 +269,6 @@ label {
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    margin: 1em auto;
-    background: #EFEFEF;
-    border: 1px solid rgba(0,0,0,.1);
-    padding: 1em;
 }
 
 .preview-img {
