@@ -754,11 +754,12 @@
 <!-- jQuery -->
 <script src="/bundles/adexchange/js/jquery.js"></script>
     <script>
-        ///
-        $(".sliding .form-control").click(function() {
-            $('html, body').animate({
-                scrollTo: $("#etizerAds").offset().top
-            }, 2000);
+
+
+        $(function() {
+            $('.sliding .form-control').click(function() {
+                $("html, body").animate({ scrollTop: $('#tizerAds').offset().top }, 500);
+            });
         });
     </script>
 <!-- Bootstrap Core JavaScript -->
