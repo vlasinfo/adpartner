@@ -194,87 +194,89 @@
                         <input type="text" class="form-control" id="headText" value="Смотрите также" />
                     </div>
                 </div>
-                <div class="form-group row">
-                    <div class="col-sm-4">
-                        <label>Размер</label>
+                <div id="headShowHide">
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Размер</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <select id="headSize" class="form-control">
+                                <option value="12">12px</option>
+                                <option value="14" selected>14px</option>
+                                <option value="16">16px</option>
+                                <option value="18">18px</option>
+                                <option value="20">20px</option>
+                                <option value="22">22px</option>
+                                <option value="24">24px</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-sm-8">
-                        <select id="headSize" class="form-control">
-                            <option value="12">12px</option>
-                            <option value="14" selected>14px</option>
-                            <option value="16">16px</option>
-                            <option value="18">18px</option>
-                            <option value="20">20px</option>
-                            <option value="22">22px</option>
-                            <option value="24">24px</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm-4">
-                        <label>Шрифт</label>
-                    </div>
-                    <div class="col-sm-8">
-                        <select id="headFont" class="form-control">
-                            <option value="Arial" selected>Arial</option>
-                            <option value="Gadget">Gadget</option>
-                            <option value="Georgia">Georgia</option>
-                            <option value="Helvetica">Helvetica</option>
-                            <option value="Impact">Impact</option>
-                            <option value="Tahoma">Tahoma</option>
-                            <option value="Times">Times</option>
-                            <option value="Trebuchetms">Trebuchet MS</option>
-                            <option value="Verdana">Verdana, Geneva</option>
-                            <option value="Palatino">Palatino</option>
-                            <option value="Times">Times New Roman</option>
-                            <option value="Opensans">Open Sans</option>
-                            <option value="Roboto">Roboto</option>
-                        </select>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Шрифт</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <select id="headFont" class="form-control">
+                                <option value="Arial" selected>Arial</option>
+                                <option value="Gadget">Gadget</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Helvetica">Helvetica</option>
+                                <option value="Impact">Impact</option>
+                                <option value="Tahoma">Tahoma</option>
+                                <option value="Times">Times</option>
+                                <option value="Trebuchetms">Trebuchet MS</option>
+                                <option value="Verdana">Verdana, Geneva</option>
+                                <option value="Palatino">Palatino</option>
+                                <option value="Times">Times New Roman</option>
+                                <option value="Opensans">Open Sans</option>
+                                <option value="Roboto">Roboto</option>
+                            </select>
 
-                        </select>
+                            </select>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group row">
-                    <div class="col-sm-4">
-                        <label>Толщина</label>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Толщина</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <select id="headWeight" class="form-control">
+                                    <option value="100">thin (100)</option>
+                                    <option value="200">200</option>
+                                    <option value="300">light (300)</option>
+                                    <option value="400" selected="">normal (400)</option>
+                                    <option value="500">medium (500)</option>
+                                    <option value="600">semi-bold (600)</option>
+                                    <option value="700">bold (700)</option>
+                                    <option value="800">extra-bold (800)</option>
+                                    <option value="900">ultra-bold (900)</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-sm-8">
-                        <select id="headWeight" class="form-control">
-                                <option value="100">thin (100)</option>
-                                <option value="200">200</option>
-                                <option value="300">light (300)</option>
-                                <option value="400" selected="">normal (400)</option>
-                                <option value="500">medium (500)</option>
-                                <option value="600">semi-bold (600)</option>
-                                <option value="700">bold (700)</option>
-                                <option value="800">extra-bold (800)</option>
-                                <option value="900">ultra-bold (900)</option>
-                        </select>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                        <label>Наклон шрифта</label>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm-4">
-                    <label>Наклон шрифта</label>
-                </div>
-                    <div class="col-sm-8">
-                        <select id="headStyle" class="form-control">
-                            <option value="normal" selected="">обычно</option>
-                            <option value="italic">курсив</option>
-                            <option value="oblique">наклон</option>
-                        </select>
+                        <div class="col-sm-8">
+                            <select id="headStyle" class="form-control">
+                                <option value="normal" selected="">обычно</option>
+                                <option value="italic">курсив</option>
+                                <option value="oblique">наклон</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm-4">
-                        <label>Выровнять</label>
-                    </div>
-                    <div class="col-sm-8">
-                        <select id="headPos" class="form-control">
-                            <option value="left" selected>Слева</option>
-                            <option value="center">По центру</option>
-                            <option value="right">Справа</option>
-                        </select>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Выровнять</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <select id="headPos" class="form-control">
+                                <option value="left" selected>Слева</option>
+                                <option value="center">По центру</option>
+                                <option value="right">Справа</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -395,87 +397,89 @@
                             <input type="checkbox" class="text-left" id="tizerTitle"/>
                         </div>
                         <div class="col-sm-6">
-                            <select id="headSize" class="form-control">
-                                <option value="12" selected>все строки</option>
-                                <option value="14">2 строки</option>
-                                <option value="16">3 строки</option>
-                                <option value="18">4 строки</option>
-                                <option value="20">5 строк</option>
+                            <select id="tizerTitleLine" class="form-control">
+                                <option value="null" selected>все строки</option>
+                                <option value="1">1 строка</option>
+                                <option value="2">2 строки</option>
+                                <option value="3">3 строки</option>
+                                <option value="4">4 строки</option>
+                                <option value="5">5 строк</option>
                             </select>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Размер</label>
+                    <div id="tizerTitleShow">
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label>Размер</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <select id="tizerTitleSize" class="form-control">
+                                    <option value="12">12px</option>
+                                    <option value="14" selected>14px</option>
+                                    <option value="16">16px</option>
+                                    <option value="18">18px</option>
+                                    <option value="20">20px</option>
+                                    <option value="22">22px</option>
+                                    <option value="24">24px</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-sm-8">
-                            <select id="tizerTitleSize" class="form-control">
-                                <option value="12">12px</option>
-                                <option value="14" selected>14px</option>
-                                <option value="16">16px</option>
-                                <option value="18">18px</option>
-                                <option value="20">20px</option>
-                                <option value="22">22px</option>
-                                <option value="24">24px</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Шрифт</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <select id="headFont" class="form-control">
-                                <option value="Arial" selected>Arial</option>
-                                <option value="Gadget">Gadget</option>
-                                <option value="Georgia">Georgia</option>
-                                <option value="Helvetica">Helvetica</option>
-                                <option value="Impact">Impact</option>
-                                <option value="Tahoma">Tahoma</option>
-                                <option value="Times">Times</option>
-                                <option value="Trebuchetms">Trebuchet MS</option>
-                                <option value="Verdana">Verdana, Geneva</option>
-                                <option value="Palatino">Palatino</option>
-                                <option value="Times">Times New Roman</option>
-                                <option value="Opensans">Open Sans</option>
-                                <option value="Roboto">Roboto</option>
-                            </select>
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label>Шрифт</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <select id="headFont" class="form-control">
+                                    <option value="Arial" selected>Arial</option>
+                                    <option value="Gadget">Gadget</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Helvetica">Helvetica</option>
+                                    <option value="Impact">Impact</option>
+                                    <option value="Tahoma">Tahoma</option>
+                                    <option value="Times">Times</option>
+                                    <option value="Trebuchetms">Trebuchet MS</option>
+                                    <option value="Verdana">Verdana, Geneva</option>
+                                    <option value="Palatino">Palatino</option>
+                                    <option value="Times">Times New Roman</option>
+                                    <option value="Opensans">Open Sans</option>
+                                    <option value="Roboto">Roboto</option>
+                                </select>
 
-                            </select>
+                                </select>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Толщина</label>
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label>Толщина</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <select id="headWeight" class="form-control">
+                                    <option value="100">thin (100)</option>
+                                    <option value="200">200</option>
+                                    <option value="300">light (300)</option>
+                                    <option value="400" selected="">normal (400)</option>
+                                    <option value="500">medium (500)</option>
+                                    <option value="600">semi-bold (600)</option>
+                                    <option value="700">bold (700)</option>
+                                    <option value="800">extra-bold (800)</option>
+                                    <option value="900">ultra-bold (900)</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-sm-8">
-                            <select id="headWeight" class="form-control">
-                                <option value="100">thin (100)</option>
-                                <option value="200">200</option>
-                                <option value="300">light (300)</option>
-                                <option value="400" selected="">normal (400)</option>
-                                <option value="500">medium (500)</option>
-                                <option value="600">semi-bold (600)</option>
-                                <option value="700">bold (700)</option>
-                                <option value="800">extra-bold (800)</option>
-                                <option value="900">ultra-bold (900)</option>
-                            </select>
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label>Наклон шрифта</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <select id="headStyle" class="form-control">
+                                    <option value="normal" selected="">обычно</option>
+                                    <option value="italic">курсив</option>
+                                    <option value="oblique">наклон</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Наклон шрифта</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <select id="headStyle" class="form-control">
-                                <option value="normal" selected="">обычно</option>
-                                <option value="italic">курсив</option>
-                                <option value="oblique">наклон</option>
-                            </select>
-                        </div>
-                    </div>
-
 
                     <div class="form-group row">
                         <div class="col-sm-12">
@@ -815,7 +819,7 @@
 
                     </div>
 
-                <input type="hidden" id="adexchangebundle_adunit_styleSetting" name="adexchangebundle_adunit[styleSetting]" value="{&quot;image&quot;:{&quot;size&quot;:&quot;80px&quot;},&quot;title&quot;:{&quot;color&quot;:&quot;#0668a7&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;14px&quot;},&quot;text&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;link&quot;:{&quot;color&quot;:&quot;#3aa126&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;border&quot;:{&quot;color&quot;:&quot;transparent&quot;,&quot;size&quot;:&quot;0px&quot;},&quot;baner&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;max_width&quot;:&quot;100%&quot;},&quot;tizer&quot;:{&quot;colwidth&quot;:&quot;50%&quot;,&quot;sign&quot;:&quot;block&quot;,&quot;title_size&quot;:&quot;14&quot;,&quot;col&quot;:&quot;2&quot;,&quot;row&quot;:&quot;2&quot;,&quot;max_width&quot;:&quot;100%&quot;,&quot;display&quot;:&quot;block&quot;,&quot;content&quot;:&quot;Смотрите также&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;weight&quot;:&quot;400&quot;,&quot;style&quot;:&quot;normal&quot;,&quot;pos&quot;:&quot;left&quot;,&quot;size&quot;:&quot;14&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;count&quot;:&quot;4&quot;,&quot;type&quot;:&quot;1&quot;,&quot;title&quot;:&quot;block&quot;,&quot;text&quot;:&quot;block&quot;,&quot;link&quot;:&quot;block&quot;}}" />
+                <input type="hidden" id="adexchangebundle_adunit_styleSetting" name="adexchangebundle_adunit[styleSetting]" value="{&quot;image&quot;:{&quot;size&quot;:&quot;80px&quot;},&quot;title&quot;:{&quot;color&quot;:&quot;#0668a7&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;14px&quot;},&quot;text&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;link&quot;:{&quot;color&quot;:&quot;#3aa126&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;border&quot;:{&quot;color&quot;:&quot;transparent&quot;,&quot;size&quot;:&quot;0px&quot;},&quot;baner&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;max_width&quot;:&quot;100%&quot;},&quot;tizer&quot;:{&quot;colwidth&quot;:&quot;50%&quot;,&quot;sign&quot;:&quot;block&quot;,&quot;title_size&quot;:&quot;14&quot;,&quot;title_line&quot;:&quot;null&quot;,&quot;col&quot;:&quot;2&quot;,&quot;row&quot;:&quot;2&quot;,&quot;max_width&quot;:&quot;100%&quot;,&quot;display&quot;:&quot;block&quot;,&quot;content&quot;:&quot;Смотрите также&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;weight&quot;:&quot;400&quot;,&quot;style&quot;:&quot;normal&quot;,&quot;pos&quot;:&quot;left&quot;,&quot;size&quot;:&quot;14&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;count&quot;:&quot;4&quot;,&quot;type&quot;:&quot;1&quot;,&quot;title&quot;:&quot;block&quot;,&quot;text&quot;:&quot;block&quot;,&quot;link&quot;:&quot;block&quot;}}" />
                 <input type="hidden" id="adexchangebundle_adunit__token" name="adexchangebundle_adunit[_token]" value="6fSa_h-Esq2yEXKQQY_JdeDrjAWIi-P4Jt_HkCDAWpU" />
             </form>
             <form id="validate_form" action="http://jigsaw.w3.org/css-validator/validator" enctype="multipart/form-data" method="post" target="_blank">
@@ -1000,8 +1004,7 @@
             }
             return 0;
         }
-        function getBanner(id)
-        {
+        function getBanner(id) {
             $('#customType').hide();
             switch(id) {
                 case '1':
@@ -1055,7 +1058,7 @@
                             '#adpartner-jsunit-' + unit_id + ' a img {border-radius: 2px;min-width:80px;min-height:80px;width:100%;height:100%;max-width: ' + bannerStyle['image']['size'] + ';max-height: ' + bannerStyle['image']['size'] +';float: left;margin: 0 10px 0 0;}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-row{margin:0px;}' +
                             '#adpartner-jsunit-' + unit_id + ' .half{width: ' + bannerStyle['tizer']['colwidth'] +';padding:0 10px 10px 0;float: left;max-width: ' + bannerStyle['tizer']['max_width'] +';min-width: ' + bannerStyle['tizer']['min_width'] +';height: ' + bannerStyle['tizer']['height'] +';overflow: hidden;}#adpartner-jsunit-' + unit_id + ' div.clr{height: 20px}' +
-                            '#adpartner-jsunit-' + unit_id + ' .adpartner-title{font-size:' + bannerStyle['tizer']['title_size'] + 'px;line-height:' + bannerStyle['tizer']['title_size'] + 6 + ';display: ' + bannerStyle['tizer']['title'] + ';overflow: hidden;white-space: pre-wrap;text-overflow: ellipsis;}' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-title{font-size:' + bannerStyle['tizer']['title_size'] + 'px;line-height:' + bannerStyle['tizer']['title_size'] + 'px;height:' + bannerStyle['tizer']['title_size'] * + bannerStyle['tizer']['title_line'] + 'px;display: ' + bannerStyle['tizer']['title'] + ';overflow: hidden;white-space: pre-wrap;text-overflow: ellipsis;}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-text{display: ' + bannerStyle['tizer']['text'] + ';}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-link-for-show{display: ' + bannerStyle['tizer']['link'] + ';}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-top img {float:none; margin-bottom:5px;}' +
@@ -1196,6 +1199,10 @@
             bannerStyle['tizer']['title_size'] = $(this).val();
             renderBanner();
         });
+        $('#tizerTitleLine').change(function(){
+            bannerStyle['tizer']['title_line'] = $(this).val();
+            renderBanner();
+        });
         $('#tizerCol').change(function(){
             bannerStyle['tizer']['col'] = $(this).val();
             renderBanner();
@@ -1305,6 +1312,7 @@
             $('#tizerMaxWidth').val(bannerStyle['tizer']['max_width']);
             $('#tizerMinWidth').val(bannerStyle['tizer']['min_width']);
             $('#tizerTitleSize').val(bannerStyle['tizer']['title_size']);
+            $('#tizerTitleLine').val(bannerStyle['tizer']['title_line']);
             $('#tizerHeight').val(bannerStyle['tizer']['height']);
             $('#tizerCol').val(bannerStyle['tizer']['col']);
             $('#tizerRow').val(bannerStyle['tizer']['row']);
@@ -1356,7 +1364,7 @@
         editor.setValue($('#adexchangebundle_adunit_customStyle').val());
     });
 
-    //
+    //only for this file
     $('#adexchangebundle_adunit_status').change(function(){
         if($(this).val() == 'active'){
             $(".active-or-not").css('border-color', '#398439');
@@ -1416,8 +1424,22 @@
         }
     });
 
-
-
+    $('#tizerTitle').click(function() {
+        if( $(this).is(':checked')) {
+            $("#tizerTitleShow").show(300);
+            $("#tizerTitleLine").show(300);
+        } else {
+            $("#tizerTitleShow").hide(300);
+            $("#tizerTitleLine").hide(300);
+        }
+    });
+    $('#headShow').click(function() {
+        if( $(this).is(':checked')) {
+            $("#headShowHide").show(300);
+        } else {
+            $("#headShowHide").hide(300);
+        }
+    });
 
 </script>
 </div>

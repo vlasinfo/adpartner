@@ -2,14 +2,14 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
-      <paths name="adpartner">
+      <paths name="Digital Decision">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="vestiukraine">
+      <paths name="adp">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
