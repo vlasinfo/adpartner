@@ -160,6 +160,7 @@ label {
     color: #454c54;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: normal;
+    font-size: 13px;
 }
 
 .panel-body {
@@ -253,6 +254,105 @@ label {
 }
 
 /* PREVIEW */
+.form-group {
+    margin-bottom: 10px;
+}
+
+.row-with-col,
+.preview-col {
+    display: none;
+}
+.col-set .row-with-col,
+.col-set .preview-col {
+    display: block;
+}
+
+.col-set .preview-col {
+    padding-top: 10px;
+}
+
+.with-col-5-5 .preview-text,
+.with-col-5-5 .banner-holder,
+.with-col-6-4 .preview-text,
+.with-col-6-4 .banner-holder,
+.with-col-7-3 .preview-text,
+.with-col-7-3 .banner-holder,
+.with-col-8-2 .preview-text,
+.with-col-8-2 .banner-holder,
+.with-col-9-1 .preview-text {
+    float: left;
+    padding-right: 15px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.with-col-5-5 .preview-text,
+.with-col-5-5 .banner-holder {
+    width: 50%;
+}
+.with-col-5-5 .banner-holder {
+    width: 50%;
+}
+.with-col-6-4 .preview-text,
+.with-col-6-4 .banner-holder {
+    width: 60%;
+}
+.with-col-6-4 .banner-holder {
+    width: 40%;
+}
+
+.with-col-7-3 .preview-text,
+.with-col-7-3 .banner-holder {
+    width: 70%;
+}
+.with-col-7-3 .banner-holder {
+    width: 30%;
+}
+
+.with-col-8-2 .preview-text,
+.with-col-8-2 .banner-holder {
+    width: 80%;
+}
+.with-col-8-2 .banner-holder {
+    width: 20%;
+}
+
+.preview-col .img,
+.preview-col .text {
+    float: left;
+    font-size: 14px;
+}
+.preview-col .img {
+    width: 30%;
+}
+.preview-col .text {
+    width: 70%;
+}
+
+.preview-col .img img {
+    width: 100%;
+}
+
+.preview-col .img {
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.preview-col .text {
+    padding-left: 10px;
+}
+
+.preview-col,
+.preview-title,
+.preview-text {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
 
 .preview-title {
     font-size: 32px;
@@ -260,6 +360,17 @@ label {
 
 .preview-s-title {
     font-size: 22px;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.panel-preview {
+    overflow: auto;
+    background: url(../img/preview-bg.png) top left repeat;
+
 }
 
 .panel-body.preview {

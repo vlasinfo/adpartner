@@ -1,8 +1,3 @@
-<!--
-FTP: ftp://vh24.timeweb.ru
-Логин: co32524
-Пароль: YXX0Vg3tUnzT
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -221,9 +216,21 @@ FTP: ftp://vh24.timeweb.ru
                     </div>
                     <div class="col-sm-8">
                         <select id="headFont" class="form-control">
-                            <option value="Arial">Arial</option>
-                            <option value="Verdana">Verdana</option>
+                            <option value="Arial" selected>Arial</option>
+                            <option value="Gadget">Gadget</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Helvetica">Helvetica</option>
+                            <option value="Impact">Impact</option>
+                            <option value="Tahoma">Tahoma</option>
                             <option value="Times">Times</option>
+                            <option value="Trebuchetms">Trebuchet MS</option>
+                            <option value="Verdana">Verdana, Geneva</option>
+                            <option value="Palatino">Palatino</option>
+                            <option value="Times">Times New Roman</option>
+                            <option value="Opensans">Open Sans</option>
+                            <option value="Roboto">Roboto</option>
+                        </select>
+
                         </select>
                     </div>
                 </div>
@@ -298,19 +305,12 @@ FTP: ftp://vh24.timeweb.ru
                                 <label>Колонки</label>
                             </div>
                             <div class="col-sm-8">
-                                <select id="tizerCount" class="form-control">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
+                                <select id="tizerCol" class="form-control">
+                                    <option data-width="100%" value="1">1</option>
+                                    <option data-width="50%" value="2">2</option>
+                                    <option data-width="33.3333333%" value="3">3</option>
+                                    <option data-width="25%" value="4">4</option>
+                                    <option data-width="20%" value="5">5</option>
                                 </select>
                             </div>
                         </div>
@@ -321,65 +321,29 @@ FTP: ftp://vh24.timeweb.ru
                                 <label>Ряды</label>
                             </div>
                             <div class="col-sm-8">
-                                <select id="tizerWidth" class="form-control"></select>
+                                <select id="tizerRow" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
                             </div>
                         </div>
+                        <div id="tizerCount"></div>
                     </div>
                 </div>
 
-                <div id="customType">
-                    <div class="form-group row">
-                        <div class="col-sm-12">
+                <div class="form-group row">
+                    <div class="col-sm-12">
                         <div class="heading">Внешний вид</div>
-                        </div>
                     </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Высота тизера</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="tizerHeight" value="300px" />
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Отображать заголовок</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <input type="checkbox" class="form-control" id="tizerTitle"/>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Отображать текст</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <input type="checkbox" class="form-control" id="tizerText"/>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Отображать ссылку</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <input type="checkbox" class="form-control" id="tizerLink"/>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-4">
-                            <label>Тип отображения</label>
-                        </div>
-                        <div class="col-sm-8">
-                            <select id="tizerType" class="form-control">
-                                <option value="1">Текст справа от картинки</option>
-                                <option value="2">Текст под картинкой</option>
-                                <option value="3">Текст над картинкой</option>
-                            </select>
-                        </div>
-                    </div>
-                </div><!-- customType -->
+                </div>
 
                 <div class="form-group row">
                     <div class="col-sm-4">
@@ -403,6 +367,152 @@ FTP: ftp://vh24.timeweb.ru
                         </select>
                     </div>
                 </div>
+                <div id="customType">
+
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Тип отображения</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <select id="tizerType" class="form-control">
+                                <option value="1">Текст справа от картинки</option>
+                                <option value="2">Текст под картинкой</option>
+                                <option value="3">Текст над картинкой</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <div class="heading">Заголовок</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Показывать</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="text-left" id="tizerTitle"/>
+                        </div>
+                        <div class="col-sm-6">
+                            <select id="headSize" class="form-control">
+                                <option value="12" selected>все строки</option>
+                                <option value="14">2 строки</option>
+                                <option value="16">3 строки</option>
+                                <option value="18">4 строки</option>
+                                <option value="20">5 строк</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Размер</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <select id="tizerTitleSize" class="form-control">
+                                <option value="12">12px</option>
+                                <option value="14" selected>14px</option>
+                                <option value="16">16px</option>
+                                <option value="18">18px</option>
+                                <option value="20">20px</option>
+                                <option value="22">22px</option>
+                                <option value="24">24px</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Шрифт</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <select id="headFont" class="form-control">
+                                <option value="Arial" selected>Arial</option>
+                                <option value="Gadget">Gadget</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Helvetica">Helvetica</option>
+                                <option value="Impact">Impact</option>
+                                <option value="Tahoma">Tahoma</option>
+                                <option value="Times">Times</option>
+                                <option value="Trebuchetms">Trebuchet MS</option>
+                                <option value="Verdana">Verdana, Geneva</option>
+                                <option value="Palatino">Palatino</option>
+                                <option value="Times">Times New Roman</option>
+                                <option value="Opensans">Open Sans</option>
+                                <option value="Roboto">Roboto</option>
+                            </select>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Толщина</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <select id="headWeight" class="form-control">
+                                <option value="100">thin (100)</option>
+                                <option value="200">200</option>
+                                <option value="300">light (300)</option>
+                                <option value="400" selected="">normal (400)</option>
+                                <option value="500">medium (500)</option>
+                                <option value="600">semi-bold (600)</option>
+                                <option value="700">bold (700)</option>
+                                <option value="800">extra-bold (800)</option>
+                                <option value="900">ultra-bold (900)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Наклон шрифта</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <select id="headStyle" class="form-control">
+                                <option value="normal" selected="">обычно</option>
+                                <option value="italic">курсив</option>
+                                <option value="oblique">наклон</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <div class="heading">Текст</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label>Показывать</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <input type="checkbox" class="text-left" id="tizerText"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <div class="heading">Ссылка</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label>Показывать</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <input type="checkbox" class="text-left" id="tizerLink"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Высота тизера</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="tizerHeight" value="300px" />
+                        </div>
+                    </div>
+                </div><!-- customType -->
                 <div class="form-group row">
                     <div class="col-sm-4">
                         <label>Ленточка</label>
@@ -591,7 +701,7 @@ FTP: ftp://vh24.timeweb.ru
 
                 <div id="tizerAds">
 
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-preview">
 
                         <div class="panel-heading">
                             Дизайн
@@ -600,12 +710,6 @@ FTP: ftp://vh24.timeweb.ru
                         <div class="panel-body">
                             <div class="col-xs-12 col-lg-12 edit-fields">
                                 <div class="form-group row">
-                                    <div class="col-sm-2">
-                                        Ширина <input id="previewWidth" class="form-control" value="800px" />
-                                    </div>
-                                    <div class="col-sm-2">
-                                        Высота <input class="form-control" id="previewHeight" value="200px" />
-                                    </div>
 
                                     <div class="col-sm-2">
                                         Устройство
@@ -622,11 +726,13 @@ FTP: ftp://vh24.timeweb.ru
                                         </select>
                                     </div>
                                     <div class="col-sm-2">
-                                        Картинка
-                                        <select id="previewImg" class="form-control">
-                                            <option value="none">Над текстом</option>
-                                            <option value="left">Слева</option>
-                                            <option value="right">Справа</option>
+                                        Шаблон
+                                        <select id="previewTemp" class="form-control">
+                                            <option value="width-10">Без колонки</option>
+                                            <option value="with-col-8-2">С колонкой 8:2</option>
+                                            <option value="with-col-7-3">С колонкой 7:3</option>
+                                            <option value="with-col-6-4">С колонкой 6:4</option>
+                                            <option value="with-col-5-5">С колонкой 5:5</option>
                                         </select>
                                     </div>
 
@@ -635,8 +741,7 @@ FTP: ftp://vh24.timeweb.ru
                         </div>
                         </div>
                         <div class="panel-body preview preview-set">
-                                <div class="row">
-                                    <div class="col-lg-12">
+                                <div class="preview-xmpl">
                                     <div class="preview-title">The AdPartner Times</div>
                                     <div class="preview-s-title">Ученые NASA создадут «обнаженную» карту Большого Барьерного рифа</div>
                                     <div class="preview-text">
@@ -648,14 +753,25 @@ FTP: ftp://vh24.timeweb.ru
                                             шести секций рифа, будут проанализированы в Лаборатории реактивного движения NASA в Калифорнии,
                                             что сможет дать картину того, какая территория покрыта кораллами, морскими водорослями и песком.
                                         </p>
+                                        <p class="row-with-col">
+                                            Руководитель проекта Эрик Хохберг из Бермудского института океанских наук пояснил, что воздушные
+                                            изображения дадут другую точку зрения того, как и почему рифы изменялись. Власти Морского парка
+                                            Большого Барьерного рифа считают, что 22% коралла умерли из-за теплового удара в этом году,
+                                            главным образом в северном регионе рифа. Карты построены с использованием датчика, известного
+                                            как портативный спектрометр удаленной визуализации, или призма. Благодаря нему будут оцениваться
+                                            существующие наборы данных для отслеживания температуры воды и загрязнения в попытке построить
+                                            полную картину.
+                                        </p>
                                     </div>
-                                </div>
-                                </div>
-<style>
 
-</style>
-                            <div class="">
                                 <div class="banner-holder">
+
+                                    <div class="preview-col">
+                                        <div class="img"><img src="bundles/adexchange/img/image200x200.jpeg"></div>
+                                        <div class="text">National Geographic опубликовал лучшие фотографии</div>
+                                    </div>
+
+
                                     <div id="adpartner-jsunit-1">
                                         <div class="head-text"></div>
                                         <div class="adpartner-wrapper" id="adsWrp">
@@ -670,9 +786,7 @@ FTP: ftp://vh24.timeweb.ru
                                         </div>
                                     </div>
                                 </div>
-                                <div  class="marg20b"></div>
-                            </div>
-                        </div>
+                        </div></div>
                         <div class="panel-body">
                             <div class="col-lg-12">
                                 <div class="row">
@@ -701,7 +815,7 @@ FTP: ftp://vh24.timeweb.ru
 
                     </div>
 
-                <input type="hidden" id="adexchangebundle_adunit_styleSetting" name="adexchangebundle_adunit[styleSetting]" value="{&quot;image&quot;:{&quot;size&quot;:&quot;80px&quot;},&quot;title&quot;:{&quot;color&quot;:&quot;#0668a7&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;14px&quot;},&quot;text&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;link&quot;:{&quot;color&quot;:&quot;#3aa126&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;border&quot;:{&quot;color&quot;:&quot;transparent&quot;,&quot;size&quot;:&quot;0px&quot;},&quot;baner&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;max_width&quot;:&quot;100%&quot;},&quot;tizer&quot;:{&quot;width&quot;:&quot;50%&quot;,&quot;sign&quot;:&quot;block&quot;,&quot;max_width&quot;:&quot;100%&quot;,&quot;display&quot;:&quot;block&quot;,&quot;content&quot;:&quot;Смотрите также&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;weight&quot;:&quot;400&quot;,&quot;style&quot;:&quot;normal&quot;,&quot;pos&quot;:&quot;left&quot;,&quot;size&quot;:&quot;14&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;count&quot;:&quot;4&quot;,&quot;type&quot;:&quot;1&quot;,&quot;title&quot;:&quot;block&quot;,&quot;text&quot;:&quot;block&quot;,&quot;link&quot;:&quot;block&quot;}}" />
+                <input type="hidden" id="adexchangebundle_adunit_styleSetting" name="adexchangebundle_adunit[styleSetting]" value="{&quot;image&quot;:{&quot;size&quot;:&quot;80px&quot;},&quot;title&quot;:{&quot;color&quot;:&quot;#0668a7&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;14px&quot;},&quot;text&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;link&quot;:{&quot;color&quot;:&quot;#3aa126&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;size&quot;:&quot;12px&quot;},&quot;border&quot;:{&quot;color&quot;:&quot;transparent&quot;,&quot;size&quot;:&quot;0px&quot;},&quot;baner&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;max_width&quot;:&quot;100%&quot;},&quot;tizer&quot;:{&quot;colwidth&quot;:&quot;50%&quot;,&quot;sign&quot;:&quot;block&quot;,&quot;title_size&quot;:&quot;14&quot;,&quot;col&quot;:&quot;2&quot;,&quot;row&quot;:&quot;2&quot;,&quot;max_width&quot;:&quot;100%&quot;,&quot;display&quot;:&quot;block&quot;,&quot;content&quot;:&quot;Смотрите также&quot;,&quot;font&quot;:&quot;Arial&quot;,&quot;weight&quot;:&quot;400&quot;,&quot;style&quot;:&quot;normal&quot;,&quot;pos&quot;:&quot;left&quot;,&quot;size&quot;:&quot;14&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;count&quot;:&quot;4&quot;,&quot;type&quot;:&quot;1&quot;,&quot;title&quot;:&quot;block&quot;,&quot;text&quot;:&quot;block&quot;,&quot;link&quot;:&quot;block&quot;}}" />
                 <input type="hidden" id="adexchangebundle_adunit__token" name="adexchangebundle_adunit[_token]" value="6fSa_h-Esq2yEXKQQY_JdeDrjAWIi-P4Jt_HkCDAWpU" />
             </form>
             <form id="validate_form" action="http://jigsaw.w3.org/css-validator/validator" enctype="multipart/form-data" method="post" target="_blank">
@@ -718,6 +832,7 @@ FTP: ftp://vh24.timeweb.ru
     </div>
 
     <!-- /#page-wrapper -->
+
 
 </div>
 
@@ -838,9 +953,9 @@ FTP: ftp://vh24.timeweb.ru
             }
             switch(bannerStyle['tizer']['type']) {
                 case '1':
-                    return '<div class="adpartner-row half"><a href="#"><img src="bundles/adexchange/img/image200x200.jpeg" /><div class="adpartner-title">Lorem ipsum rsitpametppconse dolo</div><div class="adpartner-text adpartner-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te</div><div class="adpartner-link-for-show adpartner-margin">site.url.com.ua</div></a></div>';
+                    return '<div class="adpartner-row half"><a href="#"><div class="adpartner-img-hold"><img src="bundles/adexchange/img/image200x200.jpeg" /></div><div class="adpartner-title">Lorem ipsum rsitpametppconse dolo</div><div class="adpartner-text adpartner-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te</div><div class="adpartner-link-for-show adpartner-margin">site.url.com.ua</div></a></div>';
                 case '2':
-                    return '<div class="adpartner-row half"><a href="#"><img class="adpartner-top" src="bundles/adexchange/img/image200x200.jpeg" /><br class="clr"><div class="adpartner-title">Lorem ipsum rsitpametppconse dolo</div><div class="adpartner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te</div><div class="adpartner-link-for-show">site.url.com.ua</div></a></div>';
+                    return '<div class="adpartner-row half adpartner-top"><a href="#"><div class="adpartner-img-hold"><img src="bundles/adexchange/img/image200x200.jpeg" /></div><div class="adpartner-title">Lorem ipsum rsitpametppconse dolo</div><div class="adpartner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te</div><div class="adpartner-link-for-show">site.url.com.ua</div></a></div>';
                 case '3':
                     return '<div class="adpartner-row half flex"><a href="#">' +
                             '<div class="adpartner-box">' +
@@ -881,11 +996,10 @@ FTP: ftp://vh24.timeweb.ru
                 case '11': //970x90
                     return 3;
                 case '12': //custom
-                    return $('#tizerCount').val();
+                    return parseInt($("#tizerCol").val()) * parseInt($("#tizerRow").val());
             }
             return 0;
         }
-
         function getBanner(id)
         {
             $('#customType').hide();
@@ -937,14 +1051,18 @@ FTP: ftp://vh24.timeweb.ru
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-row{margin:0px;}#adpartner-jsunit-' + unit_id + ' .half{width:33%;}';
                 case '12':
                     $('#customType').show();
-                    return  '#adpartner-jsunit-' + unit_id + '{max-width: ' + bannerStyle['baner']['max_width'] +';margin:0 auto;min-height:74px;padding:3px 4px 4px 4px;}' +
+                    return  '#adpartner-jsunit-' + unit_id + '{max-width: ' + bannerStyle['baner']['max_width'] +';margin:0 auto;min-height:74px;padding:3px 4px 4px 4px;clear:both;}' +
                             '#adpartner-jsunit-' + unit_id + ' a img {border-radius: 2px;min-width:80px;min-height:80px;width:100%;height:100%;max-width: ' + bannerStyle['image']['size'] + ';max-height: ' + bannerStyle['image']['size'] +';float: left;margin: 0 10px 0 0;}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-row{margin:0px;}' +
-                            '#adpartner-jsunit-' + unit_id + ' .half{width: ' + bannerStyle['tizer']['width'] +';margin:0 5px 10px 0;float: left;max-width: ' + bannerStyle['tizer']['max_width'] +';min-width: ' + bannerStyle['tizer']['min_width'] +';height: ' + bannerStyle['tizer']['height'] +';overflow: hidden;}#adpartner-jsunit-' + unit_id + ' div.clr{height: 20px}' +
-                            '#adpartner-jsunit-' + unit_id + ' .adpartner-title{display: ' + bannerStyle['tizer']['title'] + ';}' +
+                            '#adpartner-jsunit-' + unit_id + ' .half{width: ' + bannerStyle['tizer']['colwidth'] +';padding:0 10px 10px 0;float: left;max-width: ' + bannerStyle['tizer']['max_width'] +';min-width: ' + bannerStyle['tizer']['min_width'] +';height: ' + bannerStyle['tizer']['height'] +';overflow: hidden;}#adpartner-jsunit-' + unit_id + ' div.clr{height: 20px}' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-title{font-size:' + bannerStyle['tizer']['title_size'] + 'px;line-height:' + bannerStyle['tizer']['title_size'] + 6 + ';display: ' + bannerStyle['tizer']['title'] + ';overflow: hidden;white-space: pre-wrap;text-overflow: ellipsis;}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-text{display: ' + bannerStyle['tizer']['text'] + ';}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-link-for-show{display: ' + bannerStyle['tizer']['link'] + ';}' +
-                            '#adpartner-jsunit-' + unit_id + ' a img.adpartner-top {float:none; margin-bottom:5px;}' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-top img {float:none; margin-bottom:5px;}' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-top a,' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-top .adpartner-title,' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-top .adpartner-text, ' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-top .adpartner-link-for-show {max-width:' + bannerStyle['image']['size'] + ';margin:0 auto;display:block;}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-box{margin: 0 auto;position: relative;width:100%;}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-img{bottom: 0;display: block;margin: 0;padding: 0;text-align: center;}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-under{position:absolute;bottom:0;background-color: rgba(51, 51, 51, 0.6); bottom: 0; left: 0; margin: 0 auto; max-width: 300px; overflow: hidden;position: absolute;right: 0;width: 100%;}' +
@@ -953,11 +1071,12 @@ FTP: ftp://vh24.timeweb.ru
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-under .adpartner-title{padding:2px 5px}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-under .adpartner-text{padding:2px 5px}' +
                             '#adpartner-jsunit-' + unit_id + ' .adpartner-under .adpartner-link-for-show{padding:2px 5px}' +
-                            '#adpartner-jsunit-' + unit_id + ' .adpartner-row.half{margin:0;padding:5px;position:relative;}' +
                             '#adpartner-jsunit-' + unit_id + ' .sign{display:'+ bannerStyle['tizer']['sign'] +';}' +
-                            '#adpartner-jsunit-' + unit_id + ' .adpartner-row.half:before{content:"";background: url(' + bannerStyle['tizer']['background'] + ') no-repeat; background-size: 50%; position:absolute; top:-4px;left:-2px;width:120px;height:120px;}' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-row.half .adpartner-img-hold img {width:100%;max-width:' + bannerStyle['image']['size'] + ';display:block;}' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-row.half .adpartner-img-hold {margin:0;position:relative;}' +
+                            '#adpartner-jsunit-' + unit_id + ' .adpartner-row.half .adpartner-img-hold:before{content:"";background: url(' + bannerStyle['tizer']['background'] + ') no-repeat; background-size: 50%; position:absolute; top:-4px;left:-2px;width:120px;height:120px;}' +
                             '#adpartner-jsunit-' + unit_id + ' .head-text{display:'+ bannerStyle['tizer']['display'] +';position:relative;height:'+ bannerStyle['tizer']['size'] * 1.8 + 'px;}' +
-                            '#adpartner-jsunit-' + unit_id + ' .head-text:before {content: "'+ bannerStyle['tizer']['content'] +'";text-align:'+ bannerStyle['tizer']['pos'] +';font-family:"'+ bannerStyle['tizer']['font'] +'";font-size:'+ bannerStyle['tizer']['size'] +'px;font-weight:'+ bannerStyle['tizer']['weight'] +';font-style:'+ bannerStyle['tizer']['style'] +';position: absolute;width: 100%;}';            }
+                            '#adpartner-jsunit-' + unit_id + ' .head-text:before {content: "'+ bannerStyle['tizer']['content'] +'";text-align:'+ bannerStyle['tizer']['pos'] +';font-family:"'+ bannerStyle['tizer']['font'] +'", Arial;font-size:'+ bannerStyle['tizer']['size'] +'px;font-weight:'+ bannerStyle['tizer']['weight'] +';font-style:'+ bannerStyle['tizer']['style'] +';position: absolute;width: 100%;}';            }
         }
 
         function renderBanner() {
@@ -1065,16 +1184,24 @@ FTP: ftp://vh24.timeweb.ru
             bannerStyle['tizer']['max_width'] = $(this).val();
             renderBanner();
         });
-        $('#tizerWidth').change(function(){
-            bannerStyle['tizer']['width'] = $(this).val();
-            renderBanner();
-        });
         $('#tizerMinWidth').change(function(){
             bannerStyle['tizer']['min_width'] = $(this).val();
             renderBanner();
         });
         $('#tizerHeight').change(function(){
             bannerStyle['tizer']['height'] = $(this).val();
+            renderBanner();
+        });
+        $('#tizerTitleSize').change(function(){
+            bannerStyle['tizer']['title_size'] = $(this).val();
+            renderBanner();
+        });
+        $('#tizerCol').change(function(){
+            bannerStyle['tizer']['col'] = $(this).val();
+            renderBanner();
+        });
+        $('#tizerRow').change(function(){
+            bannerStyle['tizer']['row'] = $(this).val();
             renderBanner();
         });
         $('#headText').change(function(){
@@ -1103,6 +1230,10 @@ FTP: ftp://vh24.timeweb.ru
         });
         $('#headPos').change(function(){
             bannerStyle['tizer']['pos'] = $(this).val();
+            renderBanner();
+        });
+        $('#tizerCol').change(function(){
+            bannerStyle['tizer']['colwidth'] = $(this).find(':selected').attr('data-width');
             renderBanner();
         });
         $('#headShow').change(function(){
@@ -1172,9 +1303,11 @@ FTP: ftp://vh24.timeweb.ru
             $('#banerWidth').val(bannerStyle['baner']['width']);
             $('#banerMaxWidth').val(bannerStyle['baner']['max_width']);
             $('#tizerMaxWidth').val(bannerStyle['tizer']['max_width']);
-            $('#tizerWidth').val(bannerStyle['tizer']['width']);
             $('#tizerMinWidth').val(bannerStyle['tizer']['min_width']);
+            $('#tizerTitleSize').val(bannerStyle['tizer']['title_size']);
             $('#tizerHeight').val(bannerStyle['tizer']['height']);
+            $('#tizerCol').val(bannerStyle['tizer']['col']);
+            $('#tizerRow').val(bannerStyle['tizer']['row']);
             $('#headText').val(bannerStyle['tizer']['content']);
             $('#headFont').val(bannerStyle['tizer']['font']);
             $('#headWeight').val(bannerStyle['tizer']['weight']);
@@ -1182,6 +1315,7 @@ FTP: ftp://vh24.timeweb.ru
             $('#headPos').val(bannerStyle['tizer']['pos']);
             $('#tizerCount').val(bannerStyle['tizer']['count']);
             $('#tizerType').val(bannerStyle['tizer']['type']);
+            $('#tizerCol').attr('data-width', bannerStyle['tizer']['colwidth']);
             $('#tizerSign').attr('checked', bannerStyle['tizer']['sign'] == 'block' ? true : false);
             $('#headShow').attr('checked', bannerStyle['tizer']['display'] == 'block' ? true : false);
             $('#tizerTitle').attr('checked', bannerStyle['tizer']['title'] == 'block' ? true : false);
@@ -1263,77 +1397,29 @@ FTP: ftp://vh24.timeweb.ru
     $("#previewDevice").change(function() {
         $('.panel-body.preview').css("max-width", $(this).val());
     });
-    $("#previewImg").change(function() {
-        $('.panel-body.preview .preview-img').css("float", $(this).val());
-        if($(this).val()=="left"){
-            $('.panel-body.preview .preview-text').removeClass("img-right").addClass("img-left");
+
+    $("#previewTemp").change(function() {
+        if($(this).val()=="width-10"){
+            $('.preview-set').removeClass("with-col-5-5 with-col-6-4 with-col-7-3 with-col-8-2 col-set");
         }
-        if($(this).val()=="right"){
-            $('.panel-body.preview .preview-text').removeClass("img-left").addClass("img-right");
+        if($(this).val()=="with-col-5-5"){
+            $('.preview-set').removeClass("with-col-6-4 with-col-7-3 with-col-8-2 col-set").addClass("with-col-5-5 col-set");
         }
-        if($(this).val()=="none"){
-            $('.panel-body.preview .preview-text').removeClass("img-left").removeClass("img-right");
+        if($(this).val()=="with-col-6-4"){
+            $('.preview-set').removeClass("with-col-5-5 with-col-7-3 with-col-8-2 col-set").addClass("with-col-6-4 col-set");
+        }
+        if($(this).val()=="with-col-7-3"){
+            $('.preview-set').removeClass("with-col-5-5 with-col-6-4 with-col-8-2 col-set").addClass("with-col-7-3 col-set");
+        }
+        if($(this).val()=="with-col-8-2"){
+            $('.preview-set').removeClass("with-col-5-5 with-col-6-4 with-col-7-3 col-set").addClass("with-col-8-2 col-set");
         }
     });
+
+
 
 
 </script>
-
-    <!--<option value="100%">На весь экран</option>-->
-    <!--<option value="320px">iPhone 4</option>-->
-    <!--<option value="375px">iPhone 6</option>-->
-    <!--<option value="414px">iPhone 6 Plus</option>-->
-    <!--<option value="768px">iPad</option>-->
-    <!--<option value="360px">Galaxy S5</option>-->
-    <!--<option value="412px">Nexus</option>-->
-    <!--<option value="360px">Nokia N9</option>-->
-    <!--<option value="360px">BlackBerry Z30</option>-->
-    <script>
-//tizerCount #tizerWidth
-$(document).ready(function() {
-
-    $("#tizerCount").change(function() {
-        var el = $(this) ;
-        if(el.val() === "1" ) {
-            $("#tizerWidth").html('<option value="100%">1</option>');
-        }
-        else if(el.val() === "2" ) {
-            $("#tizerWidth").html('<option value="50%">1</option><option value="100%">2</option>');
-        }
-        else if(el.val() === "3" ) {
-            $("#tizerWidth").html('<option value="100%">1</option><option value="33.33333%">3</option>');
-        }
-        else if(el.val() === "4" ) {
-            $("#tizerWidth").html('<option value="100%">1</option><option value="50%">2</option><option value="25%">4</option>');
-        }
-        else if(el.val() === "5" ) {
-            $("#tizerWidth").html('<option value="100%">1</option><option value="20%">5</option>');
-        }
-        else if(el.val() === "6" ) {
-            $("#tizerWidth").html('<option value="100%">1</option><option value="50%">2</option><option value="33.33333%">3</option><option value="16.6666667%">6</option>');
-        }
-        else if(el.val() === "7" ) {
-            $("#tizerWidth").html('<option value="100%">1</option><option value="14.2857143%">7</option>');
-        }
-        else if(el.val() === "8" ) {
-            $("#tizerWidth").html('<option value="100%">1</option><option value="50%">2</option><option value="25%">4</option><option value="12.5%">8</option>');
-        }
-        else if(el.val() === "9" ) {
-            $("#tizerWidth").html('<option value="100%">1</option><option value="33.33333%">3</option><option value="11.1111111%">9</option>');
-        }
-        else if(el.val() === "10" ) {
-            $("#tizerWidth").html('<option value="100%">1</option><option value="50%">2</option><option value="20%">5</option><option value="10%">10</option>');
-        }
-        else if(el.val() === "11" ) {
-            $("#tizerWidth").html('<option value="100%">1</option><option value="9.09090909%">11</option>');
-        }
-        else if(el.val() === "12" ) {
-            $("#tizerWidth").html('<option value="100%">1</option><option value="50%">2</option><option value="33.33333%">3</option><option value="25%">4</option><option value="16.6666667%">6</option><option value="8.33333333%">12</option>');
-        }
-    });
-
-});
-    </script>
 </div>
 </body>
 </html>
